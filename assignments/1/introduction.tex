@@ -1,10 +1,10 @@
 \section{Introduction}
 
-Software systems, now more than ever, outsource parts of application logic to first- or third-party \emph{dependencies} --- pieces of code that are used in conjunction or as a part of the application's business logic but that are not part of the application itself. \needsRef
+Software systems, now more than ever, outsource parts of application logic to first- or third-party \emph{dependencies} --- pieces of code that are used in conjunction or as a part of the application's business logic but that are not part of the application itself.
 
-Keeping track of dependencies can be an arduous task, which can be more easily managed using software tools and components such as \emph{package managers} that keep track of an application's dependencies and their versions \needsRef, like \emph{npm} or \emph{cargo} \cite{tools:pkg-mngr:npm,tools:pkg-mngr:cargo}.
+Keeping track of dependencies can be an arduous task, which can be more easily managed using software tools and components such as \emph{package managers} that keep track of an application's dependencies and their versions \cite{article:package-manager}, like \emph{npm} or \emph{cargo} \cite{tools:pkg-mngr:npm,tools:pkg-mngr:cargo}.
 
-SBOMs \cite{article:concept:sbom-2}, proposed by the U.S. National Telecommunications and Information Administration (NTIA), are a formal way of describing the software dependencies of an application and the relations between these dependencies. Other metadata can be attached to SBOM entries for a more comprehensive outline of the software components being dependended upon.
+SBOMs (Software Bills of Materials) \cite{article:concept:sbom-2}, proposed by the U.S. National Telecommunications and Information Administration (NTIA), are a formal way of describing the software dependencies of an application and the relations between these dependencies. Other metadata can be attached to SBOM entries for a more comprehensive outline of the software components being dependended upon.
 
 Currently, there are 3 SBOM standards used in practice: OWASP CycloneDX \cite{standards:sbom:cyclonedx}, Software Product Data eXchange (SPDX) \cite{standards:sbom:spdx} and Software Identification Tagging (SWID) \cite{standards:sbom:swid}. However, little consensus exists between these 3 standards, making for one of the many challenges against general SBOM adoption \cite{article:sbom-study}.
 
