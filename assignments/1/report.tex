@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=2in,a4paper]{geometry}
 
 \usepackage[
     backend=biber,
@@ -18,18 +18,28 @@
 
 \begin{document}
 
+\begin{titlepage}
 \maketitle
+\thispagestyle{empty}
 
-\include{integrity}
+\vfill
 
 \tableofcontents
 
-\include{introduction}
-\include{overview}
-\include{metrics}
-\include{analysis-comparison}
-\include{conclusion}
+\vfill
 
+\input{integrity}
+\end{titlepage}
+
+\newgeometry{margin=1in}
+
+\input{introduction}
+\input{overview}
+\input{metrics}
+\input{analysis-comparison}
+\input{conclusion}
+
+\newpage
 \printbibliography
 
 \end{document}
