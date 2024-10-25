@@ -10,23 +10,30 @@ To effectively compare the reviewed papers, objective metrics should be used to 
 \begin{enumerate}
     \item \textbf{Aims}: are the aims/research questions of the paper clearly defined? This can help guide future work/development on the topic of SBOMs.
     \item \textbf{Conclusions}: are the conclusions drawn from the study findings valid and do they align with the aims of the paper? Same reasoning as stated above.
+    \newcounter{metrics}
+    \setcounter{metrics}{\value{enumi}}
 \end{enumerate}
 
 \paragraph{Metrics of Quantity}
 \begin{enumerate}
+    \setcounter{enumi}{\value{metrics}}
     \item \textbf{Number of SBOM adoption challenges}: the number of challenges an organization or system integrator needs to face before extracting value out of the use of SBOMs directly correlates to how eager they might be to adopting SBOMs in their processes: if the benefits don't outweigh the challenges, it is not valuable, and thus not desirable, to put in the effort required to correctly adopt and practice SBOM development.
     \item \textbf{Frequency of challenges}: the number of times challenges appear across different research papers, either quantitatively or qualitatively, shows how common those challenges are between different industry domains (since we can attest that research populations vary between industry domains), which can shed a light on how important it is to face and solve those challenges.
     \item \textbf{Number of solutions to standardize SBOM use}: the number of solutions proposed by the paper to standardize SBOM use is a good indicator of how much thought the authors have put into the topic and how much they have researched the topic.
+    \setcounter{metrics}{\value{enumi}}
 \end{enumerate}
 
 \paragraph{Metrics of methodological soundness}
 \begin{enumerate}
+    \setcounter{enumi}{\value{metrics}}
     \item \textbf{Sampling}: is the sampling of participant clearly defined and does it provide a representative sample of the population the paper is studying? This can help generalize the findings to multiple domains and contexts, allowing findings to be reused across the industry and practitioners.
     \item \textbf{Analysis of study findings}: are the analytic methods clear, systematic and reproducible? This can help guide future research work based on the papers mentioned.
+    \setcounter{metrics}{\value{enumi}}
 \end{enumerate}
 
 \paragraph{Metrics of result transferability}
 \begin{enumerate}
+    \setcounter{enumi}{\value{metrics}}
     \item \textbf{How much can a solution for challenges of a certain population be applied to challenges of another population}: by studying how "inter-populational" the solutions to a challenge might be, less redundant work can be made since efforts may be applied in different contexts.
 \end{enumerate}
 
