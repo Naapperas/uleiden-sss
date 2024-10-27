@@ -1,8 +1,8 @@
-\section{Metrics defined} \label{metrics}
+\section{Metrics used} \label{metrics}
 
-To effectively compare the reviewed papers, objective metrics should be used to rank them based on those specific criteria.
+To effectively compare the reviewed papers, objective metrics were used to rank them based on specific criteria.
 
-Since SBOM is a relatively novel concept, comparing literature on this topic should focus on identifying and highlighting the most common challenges related to its widespread adoption and how those can be mitigated. Another interesting aspect relevant for SBOM adoption is how generalized these problems are, since problems that are too specific to a certain domain only provide value for that domain and cannot be reused in other contexts.
+Since SBOMs are a relatively novel concept, comparing literature on this topic should focus on identifying and highlighting the most common challenges related to its widespread adoption and how those can be mitigated. Another interesting aspect relevant for SBOM adoption is how generalized these problems are, since problems that are too specific to a certain domain cannot be reused in other contexts.
 
 As such, the metrics we have devised for the critical comparison of the papers we reviewed are:
 
@@ -10,24 +10,29 @@ As such, the metrics we have devised for the critical comparison of the papers w
 \begin{enumerate}
     \item \textbf{Aims}: are the aims/research questions of the paper clearly defined? This can help guide future work/development on the topic of SBOMs.
     \item \textbf{Conclusions}: are the conclusions drawn from the study findings valid and do they align with the aims of the paper? Same reasoning as stated above.
-          \newcounter{metrics}
-          \setcounter{metrics}{\value{enumi}}
+
+    \newcounter{metrics}
+    \setcounter{metrics}{\value{enumi}}
 \end{enumerate}
 
 \paragraph{Metrics of Quantity}
 \begin{enumerate}
     \setcounter{enumi}{\value{metrics}}
+
     \item \textbf{Number of SBOM adoption challenges}: the number of challenges an organization or system integrator must address before realizing value out of the use of SBOMs directly correlates to how eager they might be to adopting SBOMs in their processes. If the benefits don't outweigh the challenges, it is not valuable, and thus not desirable, to put in the effort required to correctly adopt and practice SBOM development.
     \item \textbf{Number of solutions to standardize SBOM use}: the number of solutions proposed by the paper to standardize SBOM use is a strong indicator of the thought and research the authors have invested in the topic.
-          \setcounter{metrics}{\value{enumi}}
+
+    \setcounter{metrics}{\value{enumi}}
 \end{enumerate}
 
 \paragraph{Metrics of methodological soundness}
 \begin{enumerate}
     \setcounter{enumi}{\value{metrics}}
+
     \item \textbf{Sampling}: is the sampling of participants clearly defined and does it provide a representative sample of the population the paper is studying? This can help generalize the findings to multiple domains and contexts, allowing findings to be reused across the industry and practitioners.
     \item \textbf{Analysis of study findings}: are the analytic methods clear, systematic and reproducible? This can help guide future research work based on the papers mentioned.
-          \setcounter{metrics}{\value{enumi}}
+
+    \setcounter{metrics}{\value{enumi}}
 \end{enumerate}
 
 
@@ -38,6 +43,6 @@ With the exception of quantitative metrics, scores will be given based on a five
 Although we believe these metrics to be valid comparison points between the papers discussed, there are some potential issues which could hinder the validity of the comparisons made with them:
 \begin{itemize}
     \item For the \textbf{Number of SBOM adoption challenges} metric, one shortcoming of simply counting the challenges presented by each paper is that different authors might group their findings in different ways, so what would be, for example, 1 challenge for one author could become 2 for a different author. The same reasoning applies to the \textbf{Number of solutions to standardize SBOM use} metric. We did our best to analyze the papers with as much scrutiny regarding these issues as possible.
-    \item Quantitative metrics might suffer from our bias/misunderstanding of the reviewed papers in the sense that different people might consider different results as a valid unit of measurement, leading to different results of the quantitative metrics. This can be mitigated by having all papers examined thoroughly by everyone and handling any disagreements that might appear.
-          %% TODO: add more
+    \item Quantitative metrics might suffer from our bias/misunderstanding of the reviewed papers in the sense that different people might consider different results as a valid unit of measurement, leading to different values in the quantitative metrics. This can be mitigated by having all papers examined thoroughly by everyone and handling any disagreements that might appear.
+    \item The same reasoning can apply to the qualitative metrics, as different people may have differing opinions and interpretations of each paper, as well as the metrics themselves. The same mitigation strategy mentioned above can be applied here.
 \end{itemize}
