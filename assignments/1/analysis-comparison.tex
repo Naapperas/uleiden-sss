@@ -1,18 +1,18 @@
-\section{Analysis and Comparison of reviewed papers} \label{analysis}
+\section{Analysis and Discussion of reviewed papers} \label{analysis}
 
-\noindent With a set of relevant metrics defined for the topic of SBOMs, we analyzed and compared the papers based on these criteria. Our findings are summarized in Table 1 A value of \emph{N/A} means that the relevant metric is not applicable to the paper in question or that there isn't enough data/evidence that can sustain a scoring on that metric.
+\noindent With a set of relevant metrics defined for the topic of SBOMs, we analyzed and compared the papers based on these criteria. Our findings are summarized in Table \ref{tab:comparison}. A value of \emph{N/A} means that the relevant metric is not applicable to the paper in question or that there isn't enough data/evidence that can sustain a scoring on that metric.
+
+\subsection{Analysis} \label{analysis}
 
 \paragraph{Zahan et al. \cite{article:sbom-required}}
 
 \begin{enumerate}
-    \item
-    \item
-    \item
-    \item
-    \item
-    \item
-    \item
-    \item
+    \item The goals of the study are explained but could be more precise. (4/5)
+    \item The conclusions mention some of the points brought up throughout the article but there is no single conclusion that is logically drawn from the findings and discussed (2/5)
+    \item The study authors explicitly report finding 5 challenges against SBOM adoption (5)
+    \item Even though the paper talks about benefits of adopting SBOM practices, those cannot be considered solutions for common SBOM problems, so this metric is non-applicable to this paper (N/A)
+    \item The data collection process was clearly stated. However, the data points were gathered from online articles, and not actual participants, so this metric is non-applicable to this paper. (N/A)
+    \item Even though the analysis method was clearly stated, the fact remains that it is highly subjective to who is collecting and analyzing the data, meaning that the methodology employed is not entirely reproducible. (3/5)
 \end{enumerate}
 
 \paragraph{Stalnaker et al. \cite{article:software-bom}}
@@ -20,35 +20,10 @@
 \begin{enumerate}
     \item This study's aims are clearly defined through well-articulated research questions, focusing on identifying the current challenges practitioners face in SBOM adoption and usage, as well as exploring solutions to enhance the practicality and reliability of SBOMs. (5/5)
     \item The authors provide a clear link between the research questions and the conclusions, making the study's findings valid. However, the range of insights tailored to specific stakeholders is occasionally generalized, resulting in some conclusions being somewhat superficial. (4/5)
-    \item The paper identifies the following challenges: (12)
-            \begin{enumerate}[label=\Alph*.]
-                \item Complexity of SBOM specifications;
-                \item Determining data fields to include in SBOMs;
-                \item Incompatibility between SBOM standards;
-                \item Keeping SBOMs up to date;
-                \item Insufficient SBOM tooling;
-                \item Inaccurate and incomplete SBOMs;
-                \item Verifying SBOM accuracy and completeness;
-                \item Differences across ecosystems and communities;
-                \item SBOM completeness and data privacy trade-off;
-                \item SBOMs for legacy packages and repositories;
-                \item Inability to locate dependencies for SBOMs;
-                \item Unclear SBOM direction and low adoption.
-            \end{enumerate}
-    \item %to do
-    \item The researchers identified the following solutions: (4)
-            \begin{enumerate}[label=\Alph*.]
-                \item Multi-dimensional SBOM specifications;
-                \item Enhanced SBOM tooling and build system support;
-                \item Strategies for SBOM verification;
-                \item Increasing incentives for SBOM adoption.
-            \end{enumerate}
-            However, these don't account for challenges A, J and K, as they require additional research to be addressed effectively, as mentioned in the paper.
-    \item The sampling of participants is well explained and included 5 groups: SBOM Community and Adopters, Developers of Critical Open Source Systems, CPS Developers and Researchers, AI/ML Developers and Researchers, Legal Practitioners.
-          They sent 4.4k surveys and received 229 responses, which after filtering resulted in 150 valid ones. The authors also conducted 8 interviews with respondents who gave detailed replies highlighting interesting use cases, challenges, and potential solutions; demonstrated experience in their field; diversified the interviewee pool in terms of their role.
-          The sampling method is really good, but the number of participants is not enough to generalize the results for the whole industry. (4/5)
+    \item Complexity of SBOM specifications, determining data fields to include in SBOMs, incompatibility between SBOM standards and keeping SBOMs up to date are some of the challenges presented by the authors. In total, the study's authors outlined 12 challenges against SBOM adoption. (12)
+    \item Multi-dimensional SBOM specifications, enhanced SBOM tooling and build system support, strategies for SBOM verification and increasing incentives for SBOM adoption are the main solutions found by the authors of this study. However, these don't account for challenges A, J and K, as they require additional research to be addressed effectively, as mentioned in the paper. (4)
+    \item The authors clearly describe their sampling process, targeting five key groups: SBOM Community and Adopters, Critical Open Source Developers, CPS Developers and Researchers, AI/ML Developers and Researchers, and Legal Practitioners. Of the 4,400 surveys sent, 229 responses were received, with 150 remaining after filtering. Additionally, they conducted eight in-depth interviews, where respondents provided valuable insights into use cases, challenges, and potential solutions, and represented a range of roles. While the sampling approach is robust, the sample size is too limited to generalize findings across the entire industry (4/5).
     \item The researchers conducted their studies and designed the questionnaires considering previous literature on SBOMs and guidelines for survey design. Hence, the methodology is well-founded and reproducible. (5/5)
-    \item
 \end{enumerate}
 
 \paragraph{Xia et al. \cite{article:sbom-study}}
@@ -57,11 +32,9 @@
     \item The aims of this study are clearly defined when defining the research questions, and the potential (and effective) contributions of the study reflect this. (5/5)
     \item Since the survey data was compared against interview results and conclusions were drawn from analyzing both, we are confident in their validity. The link between research questions and conclusions is logically sound, so this paper scores a 5 on this metric. (5/5)
     \item Lack of standard format extensibility, potential for attackers to use SBOMs as an attack "guide" or lack of SBOM education by industry professionals are identified as the 3 main concerns analyzed. (3)
-    \item %% TODO: catalog challenges to calculate frequencies
     \item The defined 3-goal model outlines steps that the authors believe are crucial to practice if SBOMs are to see more widespread adoption. (3)
     \item The study included 82 participants from diverse backgrounds and countries. Most expertise categories have over 10 participants, with some exceptions, such as Researchers. However, each Researcher has at least 10 years of experience in software engineering, making their assessments highly representative (4/5).
     \item The data analysis methods used for both the interviews' and online surveys' responses are backed by literature articles, so they are easily reproducible. (5/5)
-    \item %% TODO: uhhh
 \end{enumerate}
 
 \paragraph{Bi et al. \cite{article:sboms-issues-solutions}}
@@ -70,11 +43,9 @@
     \item The aims/research questions of this study are extensively discussed and clarified (5/5)
     \item Since conclusions are drawn from the authors' analysis of the collected data and they help answer the defined research questions we can confidently say they are valid and thus this paper scores a 5 on this metric. (5/5).
     \item The paper identifies three categories of SBOM issues, with the second and third categories further divided into subcategories, resulting in a total of eight distinct SBOM issues. Notably, issues are reported as percentages, while solutions are presented as measurable counts. Despite these differing metrics, we believe the reviewed papers can still be compared effectively as is. (8)
-    \item
     \item The authors explicitly state that they found "33 high-level solutions for the SBOM-relevant issues and their main design problem". It can be argued whether these are actual solutions or steps towards solutions but we will respect the author's own assessment. (33)
     \item Even though the data collection method is clearly outlined, it comes from repository mining, not participant interactions. (N/A)
     \item The data collection process is thoroughly explained and the analysis method is backed by literature references based on \emph{Grounded Theory}. (5/5)
-    \item
 \end{enumerate}
 
 \paragraph{Kloeg et al. \cite{article:business-sbom}}
@@ -83,33 +54,35 @@
     \item The aims of this study are very well defined, however the research questions are not explicitly stated in the paper. The researchers only hint at them, mentioning they were based on literature studies. (3/5)
     \item The conclusions are sound and logically follow from the data analysis obtained from the interviews. The representation of the results using SWOM matrices is a good way to make the conclusions even more clear. (5/5)
     \item The paper identifies the following challenges: lack of knowledge and expertise, limited usefulness, time or effort overheads, vulnerability misclassification, financial costs, imperfect tooling/formats/vulnerability databases, threat to intellectual property. (7)
-    \item
     \item (N/A)
-    \item Participants were chosen to represent distinct stakeholder groups relevant to SBOM usage: B2B representatives, system integrators, software vendors and developers. Recruitment was conducted with assistance from an international security software provider, leveraging their network and reputation to reach customers, while SBOM developers were contacted through GitHub using publicly available email addresses.
-    Also, participants were intentionally sampled based on their SBOM expertise and years of experience in the software industry, aiming for a balanced range of expertise, from low to expert levels, to capture a diverse range of insights and perspectives on challenges and incentives.
-    Consequently, the researchers carried out 16 interviews (without previous surveys), acknowledging that a larger sample size would improve the validity of their results. (3/5)
+    \item Participants were selected to represent key SBOM stakeholder groups: B2B representatives, system integrators, software vendors, and developers. Recruitment was supported by an international security software provider's network to reach customers, while SBOM developers were contacted via publicly available GitHub emails. Sampling considered SBOM expertise and experience levels, ensuring a balanced range from beginner to expert to gather diverse perspectives on challenges and incentives. Sixteen interviews were conducted (without prior surveys), though the authors noted that a larger sample would enhance result validity (3/5).
     \item The methodology is well explained and the data analysis uses the SWOT method, which is a well-known and reliable method to analyze qualitative data. They also provided a concise figure to summarize the methodologies used in the study. (5/5)
-    \item
 \end{enumerate}
 
 %% TODO: fill this in
 \begin{table}[h]
     \centering
-    \begin{tabularx}{\textwidth}{c *{8}{|Y}}
-        \multirow{2}{*}{\textbf{Paper}}                 & \multicolumn{2}{c|}{\textbf{Quality}} & \multicolumn{3}{c|}{\textbf{Quantity}} & \multicolumn{2}{c|}{\textbf{Methodology}} & \textbf{Transf.}                                                     \\
-        \cline{2-9}                                     & \textbf{1}                            & \textbf{2}                             & \textbf{3}                                & \textbf{4}       & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
+    \begin{tabularx}{\textwidth}{c *{6}{|Y}}
+        \multirow{2}{*}{\textbf{Paper}}                 & \multicolumn{2}{c|}{\textbf{Quality}} & \multicolumn{2}{c|}{\textbf{Quantity}} & \multicolumn{2}{c}{\textbf{Methodology}}                                        \\
+        \cline{2-7}                                     & \textbf{1}                            & \textbf{2}                             & \textbf{3}                               & \textbf{4} & \textbf{5} & \textbf{6} \\
         \hline
         \hline
-        Zahan et al. \cite{article:sbom-required}       & --                                    & --                                     & 5                                         & --               & --         & --         & --         & --         \\
+        Zahan et al. \cite{article:sbom-required}       & 4                                     & 2                                      & 5                                        & N/A        & N/A        & 3          \\
         \hline
-        Stalnaker et al. \cite{article:software-bom}    & 5                                    & 4                                     & 12                                        & --               & 4         & 4         & 5         & --         \\
+        Stalnaker et al. \cite{article:software-bom}    & 5                                     & 4                                      & 12                                       & 4          & 4          & 5          \\
         \hline
-        Xia et al. \cite{article:sbom-study}            & 5                                     & 5                                      & 3                                         & --               & 3          & 4          & 5          & --         \\
+        Xia et al. \cite{article:sbom-study}            & 5                                     & 5                                      & 3                                        & 3          & 4          & 5          \\
         \hline
-        Bi et al. \cite{article:sboms-issues-solutions} & 5                                     & 5                                      & 8                                         & --               & 33         & N/A        & 5          & --         \\
+        Bi et al. \cite{article:sboms-issues-solutions} & 5                                     & 5                                      & 8                                        & 33         & N/A        & 5          \\
         \hline
-        Kloeg et al. \cite{article:business-sbom}       & 3                                    & 5                                     & 7                                        & --               & N/A         & 3         & 5         & --
+        Kloeg et al. \cite{article:business-sbom}       & 3                                     & 5                                      & 7                                        & N/A        & 3          & 5
     \end{tabularx}
     \caption{Comparison of reviewed papers}
     \label{tab:comparison}
 \end{table}
+
+\subsection{Discussion} \label{discussion}
+
+Regarding the qualitative metrics, in terms of quality almost all papers were scored highly. The one with the lower score is the paper by Zahan et al. \cite{article:sbom-required} which involved the least "methodological" approach to data collection and analysis, as expressed by this paper's rating on metric 6. Regarding methodology metrics, the story is similar. It is worth noting that 2 papers (\cite{article:sbom-required,article:sboms-issues-solutions}) couldn't be evaluated using metric 5 due to the nature of the studies themselves. This is a result of our choice of metrics to evaluate the papers by, which does not consider methodologies that do not depend on actual participants for data collection.
+
+\noindent When discussing quantitative metrics, one can see that for metric 3 (\emph{Number of SBOM adoption challenges}) the article by Stalnaker et al. \cite{article:software-bom} trumps the other 4. The same is achieved for the paper by Bi et al. \cite{article:sboms-issues-solutions} regarding metric 4 (\emph{Number of solutions to standardize SBOM use}). However, as discussed in Section \ref{analysis}, this metric is highly subjective in the sense that different authors group their findings differently: even though Bi et al. described them as "high-level solutions", in our opinion these are more like steps towards solutions which could be likened to the solution sub-groups in that paper; this would greatly reduce the number of solutions into a value more similar to the others. It is worth noting that papers \cite{article:sbom-required} and \cite{article:business-sbom} don't have a meaningful value for this metric because, instead of solutions, they present benefits of SBOM adoption and incentives towards SBOM adoption, respectively.
