@@ -1,0 +1,25 @@
+\section{Methodology}
+
+In this section, we detail the methodology used to perform the hands-on comparison between SBOM standards. In \ref{methodology:standards-tools} we discuss the different available standards and the tools chosen to generate SBOMs for each one of them. Based on the tools picked we chose, in \ref{methodology:repositories}, the repositories on which the SBOMs will be generated.
+
+\subsection{Standards and tools} \label{methodology:standards-tools}
+
+Each one of the three standard formats focuses on a specific part of the software supply chain, which can be reflected in the (meta)data that each standard stores and processes. The tools developed for each each standard also reflect these decisions. \red{I felt that I had to fill this in with something}
+
+\subsubsection{CycloneDX}
+
+CycloneDX \cite{standards:sbom:cyclonedx} is an SBOM standard format developed by the CycloneDX Core Working Group and backed by the OWASP Foundation with a focus on "cyber-risk reduction" \cite{standards:sbom:cyclonedx} and security \cite{article:sbom-study}. The standard supports writing BOMs for several domains of software development, such as Software BOMs (SBOMs), Cryptographic BOMs (CBOMs), Software-as-a-Service BOMs (SaaSBOMs), among others. Over 200 tools related to CycloneDX's SBOM format are available at \href{https://cyclonedx.org/tool-center/}{\underline{CycloneDX's official tool webpage}}. \red{Should this be a reference instead?}
+
+For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 2 were chosen: CycloneDX \verb|cdxgen|\cite{repository:cyclonedx:cdxgen} and \verb|build-info-go| \cite{repository:cyclonedx:build-info-go}.
+
+Other tools exists but they are either unrelated (SBOM analysis, VEX generation, \dots), too specific (official SBOM generators for several existing programming languages and build tools) or too limited on the supported development environments.
+
+\subsubsection{SPDX}
+\subsubsection{SWID}
+
+
+\subsection{Repositories} \label{methodology:repositories}
+
+To ensure a fair comparison between standards, we chose a representative set of major Open-Source repositories that could be analyzed by most, if not all, of the tools selected.
+
+As such, \dots
