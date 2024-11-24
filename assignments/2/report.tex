@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multirow}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=2in,a4paper]{geometry}
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{csquotes}
+
+\usepackage[
+    backend=biber,
+    style=numeric-comp,
+    sorting=ynt
+]{biblatex}
+
+\usepackage{custommacros}
+\usepackage{placeins}
+
+\addbibresource{refs.bib}
+
+\title{\textbf{System \& Software Security \\ Software Bills of Materials \\ Hands-On Project}}
+\author{
+    Davide Baggio \\ João Pereira \\ Nuno Pereira \and 
+    s4426428      \\ s4443322     \\ s4443330 
+}
+
+\date{November 2024}
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+    \thispagestyle{empty}
+
+    \vfill
+
+    \tableofcontents
+
+    \vfill
+
+    \input{integrity}
+\end{titlepage}
+
+\newgeometry{margin=1in}
+
+\input{introduction}
+
+\input{conclusion}
+
+\newpage
+\printbibliography
+
+\end{document}
