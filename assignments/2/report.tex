@@ -36,20 +36,26 @@
 
     \vfill
 
-    \tableofcontents
-
-    \vfill
-
     \input{integrity}
 \end{titlepage}
 
 \newgeometry{margin=1in}
+
+\tableofcontents
+
+\newpage
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\setcounter{page}{1}
 
 \input{introduction}
 \input{methodology}
 \input{conclusion}
 
 \newpage
+\addcontentsline{toc}{section}{References}
 \printbibliography
+
+\newpage
+\input{appendix}
 
 \end{document}
