@@ -1,0 +1,3 @@
+[submodule "assignments/2/data/repositories/kafka"]
+	path = assignments/2/data/repositories/kafka
+	url = https://github.com/apache/kafka.git
