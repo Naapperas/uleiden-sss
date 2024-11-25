@@ -10,3 +10,6 @@
 [submodule "assignments/2/data/repositories/numpy"]
 	path = assignments/2/data/repositories/numpy
 	url = https://github.com/numpy/numpy.git
+[submodule "assignments/2/data/repositories/kubernetes"]
+	path = assignments/2/data/repositories/kubernetes
+	url = https://github.com/kubernetes/kubernetes.git
