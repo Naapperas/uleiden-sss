@@ -20,8 +20,14 @@ Other tools exists but they are either unrelated (SBOM analysis, VEX generation,
 \paragraph{build-info-go} is a CLI tool to generate BuildInfo metadata, a custom format designed to encapsulate software components, their versions and their dependencies. The tool supports multiple languages and package managers and has the option to export the produced BuildInfo output into a valid CycloneDX JSON file.
 
 \subsubsection{SPDX}
-\subsubsection{SWID}
 
+\subsubsection{SWID}
+Software Identification (SWID) Tags \cite{standards:sbom:swid} are a standard format for identifying software components and metadatas, which can be used to generate SBOMs. Nowadays, the current standard of it is ISO/IEC 19770-2:2015 \cite{standards:swid:iso19770-2:2015} and is maintained by the ISO/IEC JTC 1/SC 7/WG 21 committee \cite{standards:swid:committee}.
+A generated SWID Tag document consists of a well-organized collection of data fields that specify the software product, its version, identify the organizations and people involved in its creation and distribution, list the components that make up the software, define relationships between different software products and include additional metadata for further description.
+The recommended official NIST tools for generating SWID Tags aren't properly documented or not usable in our use case, so we opted to search for others.
+
+
+\paragraph{swid-generator} is an open-source tool published by Labs64 \cite{repo:swid-generator}. In particular, it is a Maven plugin that generates SWID Tags for Java projects and is compliant with the above mentioned ISO standard.
 
 \subsection{Repositories} \label{methodology:repositories}
 
@@ -31,6 +37,5 @@ As such, we have picked N repositories from GitHub:
 
 \begin{itemize}
     \item Apache Kafka \cite{repository:dataset:kafka}
-    \item numpy 
     \item N/A
 \end{itemize}
