@@ -1,0 +1,74 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:7cd5a845-2c27-45c3-a13b-2ab30b5768a2",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-11-28T17:51:26+01:00",
+        "tools": {
+            "components": [
+                {
+                    "type": "application",
+                    "author": "anchore",
+                    "name": "syft",
+                    "version": "[not provided]"
+                }
+            ]
+        },
+        "component": {
+            "bom-ref": "163c6bad0abb2eed",
+            "type": "file",
+            "name": "kafka-3.9.1-SNAPSHOT.jar",
+            "version": "sha256:94b33ca6511fcdab1505395f577d03f5a1557ee3f7070e5c51febfb12f14ca37"
+        }
+    },
+    "components": [
+        {
+            "bom-ref": "pkg:maven/kafka/kafka@3.9.1-SNAPSHOT?package-id=77f9a16283fab230",
+            "type": "library",
+            "name": "kafka",
+            "version": "3.9.1-SNAPSHOT",
+            "cpe": "cpe:2.3:a:kafka:kafka:3.9.1-SNAPSHOT:*:*:*:*:*:*:*",
+            "purl": "pkg:maven/kafka/kafka@3.9.1-SNAPSHOT",
+            "externalReferences": [
+                {
+                    "url": "",
+                    "hashes": [
+                        {
+                            "alg": "SHA-1",
+                            "content": "85bd9bbf6e700a238e1ee279d12f0d1e6643fd75"
+                        }
+                    ],
+                    "type": "build-meta"
+                }
+            ],
+            "properties": [
+                {
+                    "name": "syft:package:foundBy",
+                    "value": "java-archive-cataloger"
+                },
+                {
+                    "name": "syft:package:language",
+                    "value": "java"
+                },
+                {
+                    "name": "syft:package:type",
+                    "value": "java-archive"
+                },
+                {
+                    "name": "syft:package:metadataType",
+                    "value": "java-archive"
+                },
+                {
+                    "name": "syft:location:0:path",
+                    "value": "/kafka-3.9.1-SNAPSHOT.jar"
+                },
+                {
+                    "name": "syft:metadata:virtualPath",
+                    "value": "/kafka-3.9.1-SNAPSHOT.jar"
+                }
+            ]
+        }
+    ]
+}

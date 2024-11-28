@@ -2,10 +2,10 @@
 	path = assignments/2/data/repositories/kafka
 	url = https://github.com/apache/kafka.git
 [submodule "assignments/2/data/tools/CycloneDX/build-info-go"]
-	path = assignments/2/data/tools/CycloneDX/build-info-go
+	path = assignments/2/data/tools/build-info-go
 	url = https://github.com/jfrog/build-info-go.git
 [submodule "assignments/2/data/tools/CycloneDX/cdxgen"]
-	path = assignments/2/data/tools/CycloneDX/cdxgen
+	path = assignments/2/data/tools/cdxgen
 	url = https://github.com/CycloneDX/cdxgen.git
 [submodule "assignments/2/data/repositories/numpy"]
 	path = assignments/2/data/repositories/numpy
@@ -13,3 +13,6 @@
 [submodule "assignments/2/data/repositories/kubernetes"]
 	path = assignments/2/data/repositories/kubernetes
 	url = https://github.com/kubernetes/kubernetes.git
+[submodule "assignments/2/data/tools/syft"]
+	path = assignments/2/data/tools/syft
+	url = https://github.com/anchore/syft.git
