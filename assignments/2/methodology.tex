@@ -10,7 +10,7 @@ Each one of the three standard formats focuses on a specific part of the softwar
 
 CycloneDX \cite{standards:sbom:cyclonedx} is an SBOM standard format developed by the CycloneDX Core Working Group and backed by the OWASP Foundation with a focus on "cyber-risk reduction" \cite{standards:sbom:cyclonedx} and security \cite{article:sbom-study}. The standard supports writing BOMs for several domains of software development, such as Software BOMs (SBOMs), Cryptographic BOMs (CBOMs), Software-as-a-Service BOMs (SaaSBOMs), among others. Over 200 tools related to CycloneDX's SBOM format are available at \href{https://cyclonedx.org/tool-center/}{\underline{CycloneDX's official tool webpage}}. \red{Should this be a reference instead?}
 
-For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 2 were chosen: CycloneDX \verb|cdxgen|\cite{repository:cyclonedx:cdxgen} and \verb|build-info-go| \cite{repository:cyclonedx:build-info-go}.
+For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 2 were chosen: CycloneDX \verb|cdxgen| \cite{repository:cyclonedx:cdxgen} and \verb|build-info-go| \cite{repository:cyclonedx:build-info-go}.
 
 Other tools exists but they are either unrelated (SBOM analysis, VEX generation, \dots), too specific (official SBOM generators for several existing programming languages and build tools) or too limited on the supported development environments.
 
@@ -29,8 +29,7 @@ SWID tagging differs from CycloneDX and SPDX in that it is not a full-fledged SB
 Out of all the official tools available, we found the following one to be the most suitable and usable:
 
 \paragraph{swid-maven-plugin} is a Maven plugin published by NIST \cite{repository:swid-maven-plugin} that generates SWID Tags for Java projects and is compliant with the above mentioned ISO standard. It needs to be configured in the project's \verb|pom.xml| file and additionally it requires the assembly descriptor in \verb|src/assembly/bin.xml| to be configured aswell.
-
-
+\paragraph{swid-generator} We also looked for unofficial tools on GitHub and found this one by Labs64 \cite{repo:swid-generator}, which also supports Gradle projects. The downside of it is that it requires implementing a custom portion of code in the project to generate the SWID Tags, which is not as straightforward as the other tool and it might be unsuitable for complex projects. By the same authors, there is also a Maven plugin which is unfortunately not maintained anymore and uses an outdated version of Java, which results in a lot of errors when trying to build it, as testified by \href{https://github.com/Labs64/swid-maven-plugin/issues/5}{this issue}.
 
 \subsection{Repositories} \label{methodology:repositories}
 
