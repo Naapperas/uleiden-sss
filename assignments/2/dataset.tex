@@ -1,27 +1,27 @@
-\section{Methodology}
+\section{Dataset}
 
-In this section, we detail the methodology used to perform the hands-on comparison between SBOM standards. In \ref{methodology:standards} we discuss the different available standards and the tools chosen to generate SBOMs for each one of them are described in \ref{methodology:tools}. Based on the tools picked we chose, in \ref{methodology:repositories}, the repositories for which the SBOMs will be generated.
+In this section, we detail the dataset used to perform the hands-on comparison between SBOM standards. In \ref{dataset:standards} we discuss the different available standards and the tools chosen to generate SBOMs for each one of them are described in \ref{dataset:tools}. Based on the tools picked we chose, in \ref{dataset:repositories}, the repositories for which the SBOMs will be generated.
 
-\subsection{Standards} \label{methodology:standards}
+\subsection{Standards} \label{dataset:standards}
 
 Each one of the three standard formats focuses on a specific part of the software supply chain, which can be reflected in the (meta)data that each standard stores and processes. The tools developed for each each standard also reflect these decisions.
 
-\subsubsection{CycloneDX} \label{methodology:standard:cdx}
+\subsubsection{CycloneDX} \label{dataset:standard:cdx}
 
 CycloneDX \cite{standards:sbom:cyclonedx} is an SBOM standard format developed by the CycloneDX Core Working Group and backed by the OWASP Foundation with a focus on "cyber-risk reduction" \cite{standards:sbom:cyclonedx} and security \cite{article:sbom-study}. The standard supports writing BOMs for several domains of software development, such as Software BOMs (SBOMs), Cryptographic BOMs (CBOMs), Software-as-a-Service BOMs (SaaSBOMs), among others. Over 200 tools related to CycloneDX's SBOM format are available at \href{https://cyclonedx.org/tool-center/}{\underline{CycloneDX's official tool webpage}}.
 
-For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 3 were chosen: CycloneDX \verb|cdxgen| \cite{repository:cyclonedx:cdxgen}, \verb|build-info-go| \cite{repository:cyclonedx:build-info-go} and \verb|syft| \cite{repository:cyclonedx:syft}. \verb|syft| also supports SPDX, which will be discussed in \ref{methodology:standard:spdx}.
+For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 3 were chosen: CycloneDX \verb|cdxgen| \cite{repository:cyclonedx:cdxgen}, \verb|build-info-go| \cite{repository:cyclonedx:build-info-go} and \verb|syft| \cite{repository:cyclonedx:syft}. \verb|syft| also supports SPDX, which will be discussed in \ref{dataset:standard:spdx}.
 
 Other tools exists but they are either unrelated (SBOM analysis, VEX generation, \dots), too specific (official SBOM generators for several existing programming languages and build tools) or too limited on the supported development environments.
 
-\subsubsection{SPDX} \label{methodology:standard:spdx}
+\subsubsection{SPDX} \label{dataset:standard:spdx}
 
 SPDX (System Package Data Exchange) \cite{standards:sbom:spdx} is a standard format maintained by the Linux Foundation for communicating software bill of material information, including provenance, license, security, AI and other related information.
 All these characteristics make it a very versatile tool for software supply chain management. Nowadays it is used in the Linux kernel and in many package managers.
 
 Tools used for SPDX SBOM generation include \verb|syft| \cite{repository:cyclonedx:syft}, \dots
 
-\subsubsection{SWID} \label{methodology:standard:swid}
+\subsubsection{SWID} \label{dataset:standard:swid}
 
 Software Identification (SWID) Tags \cite{standards:sbom:swid} are a standard format for identifying software components and metadata, which can be used to generate SBOMs. Nowadays, the current standard of it is ISO/IEC 19770-2:2015 \cite{standards:swid:iso19770-2:2015} and is maintained by the ISO/IEC JTC 1/SC 7/WG 21 committee \cite{standards:swid:committee}.
 
@@ -29,7 +29,7 @@ A generated SWID Tag document consists of a well-organized collection of data fi
 SWID tagging differs from CycloneDX and SPDX in that it is not a full-fledged SBOM format, as it doesn't aggregate information of all softwares so it's rather a standard for identifying software components and their metadata.
 
 
-\subsection{Tools} \label{methodology:tools}
+\subsection{Tools} \label{dataset:tools}
 
 \paragraph{cdxgen} is an official tool developed and released on GitHub by the CycloneDX team, built around the idea of being a "polyglot SBOM generator that is user friendly, precise and comprehensive". It provides a comprehensive SBOM generator for different versions of theCycloneDX Standard and also provides a Server mode, automatic licensing information and Docker/OCI container support. It is currently distributed as an NPM package.
 
@@ -45,18 +45,14 @@ SWID tagging differs from CycloneDX and SPDX in that it is not a full-fledged SB
 \\ By the same authors, there is also a Maven plugin which is unfortunately not maintained anymore and uses an outdated version of Java, which results in a lot of errors when trying to build it, as testified by \href{https://github.com/Labs64/swid-maven-plugin/issues/5}{this issue}.
 
 
-
-
-
-
-\subsection{Repositories} \label{methodology:repositories}
+\subsection{Repositories} \label{dataset:repositories}
 
 To ensure a fair comparison between standards, we chose a representative set of major Open-Source repositories that could be analyzed by most, if not all, of the tools selected.
 
 As such, we have picked 3 repositories from GitHub:
 
 \begin{itemize}
-    \item Apache Kafka \cite{repository:dataset:kafka} is a modern event-streaming platform written in Java by the Apache Software Foundation. Initially developed at Linkedin to accommodate their growing message processing needs, it now serves as the backbone for many asynchronous, event-driven and streaming systems around the world.
+    \item Apache Kafka \cite{repository:dataset:kafka} is a modern event-streaming platform written in Java by the Apache Software Foundation. Initially developed at Linkedin to accommodate their growing message processing needs, it now serves as the backbone for many asynchronous, event-driven and streaming systems around the world. \red{This might change to another, Maven-based project}
     \item numpy \cite{repository:dataset:numpy} is a Python library that provides a "multi-dimensional array object" and utilities and operations built around array objects for fast manipulation. Currently it supports most of the mainstream scientific and machine learning packages available, like SciPy and SciKit Learn.
     \item Kubernetes \cite{repository:dataset:k8s} is a container orchestration tool initially developed at Google to mimic their internal system Borg. It supports user defined-workloads and maintains a constant system state, ensuring high-availability and reliability.
 \end{itemize}
