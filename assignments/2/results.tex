@@ -1,1 +1,11 @@
-\section{Results}
+\section{Results} \label{results}
+
+\subsection{CycloneDX} \label{results:cdx}
+
+\subsection{SPDX} \label{results:spdx}
+
+\subsection{SWID} \label{results:swid}
+Generating SWID tags turned out to be an unfeasible task due to the lack of proper tools and documentation. The tools provided by NIST only support Java projects built with Maven, which is too restrictive since the largest projects use Gradle nowadays, while the tools found on GitHub require implementing a custom portion of code in the project to generate the tags, which is not as straightforward as the other tools and it might be unsuitable for complex projects.
+In addition to this, the documentation provided by NIST is often not very clear on how to use the tools, which makes it even harder to generate the SWID tags.
+\\Out of all the previosly mentioned tools, only the \verb|swid-maven-plugin| was able to generate a tag file for \href{https://github.com/MithunTechnologiesDevOps/maven-web-application}{this} Maven project. The result can be seen at appendix \ref{appendix:swid-maven-plugin}.
+We also tried to use \verb|swid-generator| with the Kafka project, since technically is the only tool that should support Gradle. 

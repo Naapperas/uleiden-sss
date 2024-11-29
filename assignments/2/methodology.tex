@@ -28,9 +28,6 @@ Software Identification (SWID) Tags \cite{standards:sbom:swid} are a standard fo
 A generated SWID Tag document consists of a well-organized collection of data fields that specify the software product, its version, identify the organizations and people involved in its creation and distribution, list the components that make up the software, define relationships between different software products and include additional metadata for further description.
 SWID tagging differs from CycloneDX and SPDX in that it is not a full-fledged SBOM format, as it doesn't aggregate information of all softwares so it's rather a standard for identifying software components and their metadata.
 
-The recommended official NIST tools for generating SWID Tags only support Java programs built with Maven, which is too restrictive, and most of them aren't properly documented or don't fit our use case.
-% Out of all the official tools available, we found the following one to be the most suitable and usable:
-
 
 \subsection{Tools} \label{methodology:tools}
 
@@ -40,10 +37,12 @@ The recommended official NIST tools for generating SWID Tags only support Java p
 
 \paragraph{syft} is a "CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems" \cite{repository:cyclonedx:syft}. It provides visibility into vulnerabilities and license compliance and can interact with modern vulnerability scanners such as Grype. It can output information in over 10 output formats, including custom user-defined formats specified by templates, and supports over 20 ecosystems.
 
+\paragraph{swid-builder} a Java API for building SWID and CoSWID tags. This library provides a set of builder patterns that can be used together to generate tags, however it is not a standalone tool and the provided \href{https://pages.nist.gov/swid-tools/swid-builder/apidocs/index.html}{documentation} is not very clear on how to use it. Thus, it is not suitable for our use case.
 
-\paragraph{swid-maven-plugin} is a Maven plugin published by NIST \cite{repository:swid-maven-plugin} that generates SWID Tags for Java projects and is compliant with the above mentioned ISO standard. It needs to be configured in the project's \verb|pom.xml| file and additionally it requires the assembly descriptor in \verb|src/assembly/bin.xml| to be configured aswell.
+\paragraph{swid-maven-plugin} is a Maven plugin published by NIST \cite{repository:swid-maven-plugin} that generates SWID Tags for Java projects and is compliant with the above mentioned ISO standard. It needs to be configured in the project's \verb|pom.xml| file and additionally it requires the assembly descriptor in \verb|src/assembly/bin.xml| to be configured aswell. The plugin is not maintained anymore but still produces a valid SWID Tag file.
 
-\paragraph{swid-generator} We also looked for unofficial tools on GitHub and found this one by Labs64 \cite{repo:swid-generator}, which also supports Gradle projects. The downside of it is that it requires implementing a custom portion of code in the project to generate the SWID Tags, which is not as straightforward as the other tool and it might be unsuitable for complex projects. By the same authors, there is also a Maven plugin which is unfortunately not maintained anymore and uses an outdated version of Java, which results in a lot of errors when trying to build it, as testified by \href{https://github.com/Labs64/swid-maven-plugin/issues/5}{this issue}.
+\paragraph{swid-generator} as alternatives to the official tools, we also looked for unofficial ones on GitHub and found a tool developed by Labs64 \cite{repo:swid-generator}, which also supports Gradle projects. The downside of it is that it requires implementing a custom portion of code in the project to generate the SWID Tags, which is not as straightforward as the other tool and it might be unsuitable for complex projects. 
+\\ By the same authors, there is also a Maven plugin which is unfortunately not maintained anymore and uses an outdated version of Java, which results in a lot of errors when trying to build it, as testified by \href{https://github.com/Labs64/swid-maven-plugin/issues/5}{this issue}.
 
 
 
