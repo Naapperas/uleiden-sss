@@ -163,6 +163,15 @@ function stack_exists
 
 #############################
 
+GREEN="\033[32m"
+RED="\033[31m"
+YELLOW="\033[33m"
+BOLD="\033[1m"
+NO_BOLD="\033[22m"
+UNDERLINE="\033[4m"
+NO_UNDERLINE="\033[24m"
+NORMAL="\033[0m"
+
 STACK_NAME=directory_stack
 
 function ensure_dir {
@@ -191,7 +200,7 @@ function main {
     stack_push $STACK_NAME "$(pwd)" # get the current working directory in the stack to kickoff everything else
 
     for STANDARD in "${!STANDARDS[@]}"; do
-        echo "$STANDARD"
+        echo -e "Writing reports for: ${BOLD}$STANDARD${NO_BOLD}\n"
 
         # create directory to store the current $STANDARD's reports
         ensure_dir "$REPORT_DIR/$STANDARD" "${STANDARD}_REPORTS"
