@@ -1,0 +1,59 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": ["types/**", "contrib/**", "data/**"],
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off",
+        "useLiteralKeys": "off",
+        "noUselessTernary": "warn"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "error",
+        "noUnnecessaryContinue": "warn",
+        "noConstAssign": "error",
+        "noConstantCondition": "error",
+        "noUnreachable": "info",
+        "noUnusedFunctionParameters": "warn"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "style": {
+        "noParameterAssign": "off",
+        "noShoutyConstants": "warn",
+        "noUselessElse": "warn"
+      },
+      "suspicious": {
+        "noAssignInExpressions": "off",
+        "noDoubleEquals": "warn",
+        "noAsyncPromiseExecutor": "warn",
+        "noControlCharactersInRegex": "warn",
+        "noDebugger": "error",
+        "noEmptyBlockStatements": "warn"
+      },
+      "nursery": {
+        "noDuplicateElseIf": "warn"
+      }
+    }
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": true,
+    "ignore": ["types/**"],
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "files": {
+    "maxSize": 5242880
+  }
+}

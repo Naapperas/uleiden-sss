@@ -183,32 +183,94 @@ function ensure_dir {
         mkdir -p "./$1"
     fi
 
-    eval "$2"="./$1"
+    eval "$2"="$1"
+    # shellcheck disable=SC2163
+    export "$2" # HACK: ShellCheck gives a warning on this line for a reason
 
     return 0
 }
 
 ensure_dir "./data" DIRECTORY_PREFIX
 ensure_dir "$DIRECTORY_PREFIX/reports" REPORT_DIR
-ensure_dir "$DIRECTORY_PREFIX/tools" TOOL_DIR
+ensure_dir "$DIRECTORY_PREFIX/tools" TOOLS_DIR
 ensure_dir "$DIRECTORY_PREFIX/repositories" REPOSITORY_DIR
 
-declare -A STANDARDS=( ["SPDX"]="spdx" ["CycloneDX"]="cdx" ["SWID"]="swid" )
+# declare -A STANDARDS=( ["SPDX"]="spdx" ["CycloneDX"]="cdx" ["SWID"]="swid" )
+declare -A STANDARDS=( ["CycloneDX"]="cdx" )
+
+function build_tool {
+    
+    : ${1?'Missing name of the built executable tool'}
+
+    if [[ ! -f "./build.sh" ]]; then
+        echo -e "${RED}ERROR${NORMAL}: no build script found." ;
+        return 1 ;
+    fi
+
+    echo -en "Building ${GREEN}\"$1\"${NORMAL}... "
+
+    ./build.sh "$1"
+
+    RESULT=$?
+
+    if [[ $RESULT -eq 0 ]]; then
+        echo -e "${GREEN}BUILD SUCCESS!${NORMAL}" ;
+    else
+        echo -e "${RED}ERROR${NORMAL}: could not build tool at ${BOLD}${YELLOW}${1}${NORMAL}${NO_BOLD}. Skipping tool..." ;
+    fi
+
+    return $RESULT ;
+}
+
+function reports_for_tool {
+
+    : ${1?'Missing tool directory'}
+    : ${2?'Missing extension for generated report files'}
+    : ${3?'Missing directory for generated report files'}
+
+    echo -e "Entering ${YELLOW}${BOLD}$1${NORMAL}..."
+    stack_push $STACK_NAME "$(pwd)"
+    cd "$1" || { echo -e "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${1}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
+
+    # shellcheck disable=SC2206
+    IFS=$'/' PATH_PARTS=($1)
+    IFS=
+
+    TOOL_CANONICAL_NAME=${PATH_PARTS[${#PATH_PARTS[@]} - 1]}
+
+    TOOL_NAME="${TOOL_CANONICAL_NAME}EXE"
+
+    build_tool "$TOOL_NAME"
+
+    if [[ $? -eq 0 ]]; then
+        EXECUTABLE_PATH="$(pwd)/$TOOL_NAME"
+
+        echo $EXECUTABLE_PATH
+    fi
+
+    echo -e "Leaving ${YELLOW}${BOLD}$1${NORMAL}..."
+    stack_pop "$STACK_NAME" START_DIR
+    cd "$START_DIR" || { echo -e "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${START_DIR}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
+
+    echo -e "\n"
+}
 
 function main {
     stack_new $STACK_NAME
-    stack_push $STACK_NAME "$(pwd)" # get the current working directory in the stack to kickoff everything else
 
     for STANDARD in "${!STANDARDS[@]}"; do
-        echo -e "Writing reports for: ${BOLD}$STANDARD${NO_BOLD}\n"
-
         # create directory to store the current $STANDARD's reports
-        ensure_dir "$REPORT_DIR/$STANDARD" "${STANDARD}_REPORTS"
+        ensure_dir "$REPORT_DIR/$STANDARD" "REPORTS_DIR"
 
-        for subdir in $(find "$TOOL_DIR" -maxdepth 1 -type d); do
-            echo $subdir
-        done
+        STANDARD_EXTENSION="${STANDARDS[$STANDARD]}.json"
 
+        echo -e "Writing reports for ${BOLD}$STANDARD${NO_BOLD} in \"$REPORTS_DIR\"\n\n"
+
+        while IFS= read -r -d '' TOOL_DIR; do
+            reports_for_tool "$TOOL_DIR" "$STANDARD_EXTENSION" "$REPORT_DIR"
+        done < <(find "$TOOLS_DIR" -maxdepth 1 -mindepth 1 -type d -print0)
+
+        echo -e "========================================================\n"
     done
 
     stack_destroy $STACK_NAME

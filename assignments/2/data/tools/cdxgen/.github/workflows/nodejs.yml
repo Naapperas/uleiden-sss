@@ -1,0 +1,88 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+    - 'v*'
+  workflow_dispatch:
+  pull_request:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        node-version: ['20.x', '21.x', '22.x', '23.x']
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: npm install, build and test
+        run: |
+          corepack enable
+          corepack pnpm install
+          corepack pnpm test
+          NPM_CONFIG_PROVENANCE=true corepack pnpm publish --access=public --dry-run --no-git-checks
+        env:
+          CI: true
+      - name: check sbom for vulns
+        run: |
+          node bin/cdxgen.js -t js -o bom.json --no-recurse --required-only
+          pip install appthreat-vulnerability-db[all]
+          vdb --download-image
+          vdb --bom bom.json
+        env:
+          COLUMNS: 140
+  deno-build:
+    strategy:
+      matrix:
+        os: [windows, macos, ubuntu]
+        deno_version: [2.x]
+        include:
+          - os: windows
+            build: |
+              deno compile --allow-read --allow-env --allow-run --allow-sys=uid,systemMemoryInfo,gid,osRelease,homedir --allow-write --allow-net --output cdxgenx.exe bin/cdxgen.js
+              .\cdxgenx.exe --help
+              (Get-FileHash .\cdxgenx.exe).hash | Out-File -FilePath .\cdxgenx.exe.sha256
+            artifact: cdxgenx.exe
+          - os: macos
+            build: |
+              deno compile --allow-read --allow-env --allow-run --allow-sys=uid,systemMemoryInfo,gid,homedir --allow-write --allow-net --target x86_64-apple-darwin --output cdxgenx-darwin-amd64 bin/cdxgen.js
+              ./cdxgenx-darwin-amd64 --help
+              shasum -a 256 cdxgenx-darwin-amd64 > cdxgenx-darwin-amd64.sha256
+              deno compile --allow-read --allow-env --allow-run --allow-sys=uid,systemMemoryInfo,gid,homedir --allow-write --allow-net --target aarch64-apple-darwin --output cdxgenx-darwin-arm64 bin/cdxgen.js
+              shasum -a 256 cdxgenx-darwin-arm64 > cdxgenx-darwin-arm64.sha256
+            artifact: cdxgenx-darwin-amd64
+          - os: ubuntu
+            build: |
+              deno compile --allow-read --allow-env --allow-run --allow-sys=uid,systemMemoryInfo,gid,homedir --allow-write --allow-net --output cdxgenx bin/cdxgen.js
+              shasum -a 256 cdxgenx > cdxgenx.sha256
+              chmod + cdxgenx
+              ./cdxgenx --help
+            artifact: cdxgenx
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v${{ matrix.deno_version }}
+      - name: deno compile
+        run: |
+          deno info bin/cdxgen.js
+          deno info bin/evinse.js
+          mkdir build
+          ${{ matrix.build }}
+        continue-on-error: true

@@ -1,0 +1,25 @@
+name: Biome
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+    - 'v*'
+  workflow_dispatch:
+  pull_request:
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Check Linting
+        run: |
+          corepack enable
+          corepack pnpm install
+          corepack pnpm run lint:check
+        env:
+          CI: true

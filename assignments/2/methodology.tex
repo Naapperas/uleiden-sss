@@ -2,6 +2,6 @@
 
 In order to effectively and correctly compare the three SBOM standards, we used the tools mentioned in Section \ref{dataset:tools} on each one of the three example projects. This process involved building the tools themselves and running them against each project according to project-specific configuration parameters. The resulting output files were grouped according to each standard, with the filename indicating the tool used for better analysis.
 
-To aid this process, a custom \emph{Bash} script was developed. This script is responsible for building each tool, applying the correct flags to the resulting executable and generating an SBOM for each 
+To aid this process, a custom \emph{Bash} script was developed. This script is responsible for building each tool, applying the correct flags to the resulting executable and generating an SBOM for each example repository.
 
 This process resulted in 12 reports for CycloneDX (it is worh noting that \verb|syft| supports generating SBOMs from both files and directories, so these differences were taken into account), N files for SPDX and 0 files for SWID. A discussion of these results is present in Section \ref{results}.

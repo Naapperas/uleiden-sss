@@ -1,0 +1,60 @@
+name: Tests
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+  pull_request:
+# Ensures that only the latest commit is running for each PR at a time.
+# Ignores this rule for push events.
+concurrency:
+  group: ${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+jobs:
+  unit-test:
+    name: ${{ matrix.os }}, node ${{ matrix.node }}, python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # macos-latest = arm64, macos-14-large = amd64
+        os: [ ubuntu-latest, windows-latest, macos-latest, macos-14-large ]
+        node: [ 14, 16, 16.9 ]
+        include:
+          - node: "14"
+            python: "3.8"
+          - node: "16"
+            python: "3.9"
+          - node: "16.9"
+            python: "3.x"
+        exclude:
+          # MacOS with ARM does not support node 14
+          - os: macos-latest
+            node: 14
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python3
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Setup Pipenv
+        run: pip3 install pipenv
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          check-latest: true
+
+      - name: Setup Go with cache
+        uses: jfrog/.github/actions/install-go-with-cache@main
+
+      - name: Lint
+        run: go vet ./...
+
+      - name: Tests
+        run: go test -v -race -timeout 0 -cover ./...
