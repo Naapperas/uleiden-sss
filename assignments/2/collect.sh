@@ -10,7 +10,7 @@
 # Usage: stack_new name
 #
 # Example: stack_new x
-function stack_new
+stack_new()
 {
     : ${1?'Missing stack name'}
     if stack_exists $1
@@ -28,7 +28,7 @@ function stack_new
 # Destroy a stack
 #
 # Usage: stack_destroy name
-function stack_destroy
+stack_destroy()
 {
     : ${1?'Missing stack name'}
     eval "unset _stack_$1 _stack_$1_i"
@@ -38,7 +38,7 @@ function stack_destroy
 # Push one or more items onto a stack.
 #
 # Usage: stack_push stack item ...
-function stack_push
+stack_push()
 {
     : ${1?'Missing stack name'}
     : ${2?'Missing item(s) to push'}
@@ -67,7 +67,7 @@ function stack_push
 # Print a stack to stdout.
 #
 # Usage: stack_print name
-function stack_print
+stack_print()
 {
     : ${1?'Missing stack name'}
 
@@ -95,7 +95,7 @@ function stack_print
 # Example:
 #    stack_size mystack n
 #    echo "Size is $n"
-function stack_size
+stack_size()
 {
     : ${1?'Missing stack name'}
     : ${2?'Missing name of variable for stack size result'}
@@ -114,7 +114,7 @@ function stack_size
 # Example:
 #    stack_pop mystack top
 #    echo "Got $top"
-function stack_pop
+stack_pop()
 {
     : ${1?'Missing stack name'}
     : ${2?'Missing name of variable for popped result'}
@@ -140,7 +140,7 @@ function stack_pop
     return 0
 }
 
-function no_such_stack
+no_such_stack()
 {
     : ${1?'Missing stack name'}
     stack_exists $1
@@ -149,7 +149,7 @@ function no_such_stack
     return $x
 }
 
-function stack_exists
+stack_exists()
 {
     : ${1?'Missing stack name'}
     eval '_i=$'"_stack_$1_i"
@@ -168,13 +168,11 @@ RED="\033[31m"
 YELLOW="\033[33m"
 BOLD="\033[1m"
 NO_BOLD="\033[22m"
-UNDERLINE="\033[4m"
-NO_UNDERLINE="\033[24m"
 NORMAL="\033[0m"
 
 STACK_NAME=directory_stack
 
-function ensure_dir {
+ensure_dir() {
 
     : ${1?'Missing directory subpath'}
     : ${2?'Missing name of variable for directory path'}
@@ -190,47 +188,83 @@ function ensure_dir {
     return 0
 }
 
-ensure_dir "./data" DIRECTORY_PREFIX
+ensure_dir "$(pwd)/data" DIRECTORY_PREFIX
 ensure_dir "$DIRECTORY_PREFIX/reports" REPORT_DIR
 ensure_dir "$DIRECTORY_PREFIX/tools" TOOLS_DIR
-ensure_dir "$DIRECTORY_PREFIX/repositories" REPOSITORY_DIR
+ensure_dir "$DIRECTORY_PREFIX/repositories" REPOSITORIES_DIR
 
 # declare -A STANDARDS=( ["SPDX"]="spdx" ["CycloneDX"]="cdx" ["SWID"]="swid" )
 declare -A STANDARDS=( ["CycloneDX"]="cdx" )
 
-function build_tool {
+cleanup_tool() {
+    : ${1?'Missing name of the built executable tool'}
+    
+    printf "Cleaning up ${GREEN}\"$1\"${NORMAL}... "
+
+    rm -f $1   
+
+    RESULT=$?
+
+    if [[ $RESULT -eq 0 ]]; then
+        printf "${GREEN}CLEANUP SUCCESS!${NORMAL}\n" ;
+    else
+        printf "${RED}ERROR${NORMAL}: could not clean up tool files. Skipping..." ;
+    fi
+
+    return $RESULT ;
+}
+
+build_tool() {
     
     : ${1?'Missing name of the built executable tool'}
 
     if [[ ! -f "./build.sh" ]]; then
-        echo -e "${RED}ERROR${NORMAL}: no build script found." ;
+        printf "${RED}ERROR${NORMAL}: no build script found." ;
         return 1 ;
     fi
 
-    echo -en "Building ${GREEN}\"$1\"${NORMAL}... "
+    printf "Building ${GREEN}\"$1\"${NORMAL}... "
 
     ./build.sh "$1"
 
     RESULT=$?
 
     if [[ $RESULT -eq 0 ]]; then
-        echo -e "${GREEN}BUILD SUCCESS!${NORMAL}" ;
+        printf "${GREEN}BUILD SUCCESS!${NORMAL}\n" ;
     else
-        echo -e "${RED}ERROR${NORMAL}: could not build tool at ${BOLD}${YELLOW}${1}${NORMAL}${NO_BOLD}. Skipping tool..." ;
+        printf "${RED}ERROR${NORMAL}: could not build tool at ${BOLD}${YELLOW}${1}${NORMAL}${NO_BOLD}. Skipping tool..." ;
     fi
 
     return $RESULT ;
 }
 
-function reports_for_tool {
+report_for_tool_and_repo() {
+    # shellcheck disable=SC2086
+    : ${1?'Missing executable path'}
+    # shellcheck disable=SC2086
+    : ${2?'Missing tool name'}
+    # shellcheck disable=SC2086
+    : ${3?'Missing example repository path'}
+    # shellcheck disable=SC2086
+    : ${4?'Missing extension for generated report files'}
 
+    echo $2
+    echo $3
+
+}
+
+reports_for_tool() {
+
+    # shellcheck disable=SC2086
     : ${1?'Missing tool directory'}
+    # shellcheck disable=SC2086
     : ${2?'Missing extension for generated report files'}
+    # shellcheck disable=SC2086
     : ${3?'Missing directory for generated report files'}
 
-    echo -e "Entering ${YELLOW}${BOLD}$1${NORMAL}..."
+    printf "Entering ${YELLOW}${BOLD}$1${NORMAL}...\n"
     stack_push $STACK_NAME "$(pwd)"
-    cd "$1" || { echo -e "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${1}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
+    cd "$1" || { printf "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${1}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
 
     # shellcheck disable=SC2206
     IFS=$'/' PATH_PARTS=($1)
@@ -240,22 +274,30 @@ function reports_for_tool {
 
     TOOL_NAME="${TOOL_CANONICAL_NAME}EXE"
 
-    build_tool "$TOOL_NAME"
-
-    if [[ $? -eq 0 ]]; then
+    if build_tool "$TOOL_NAME"; then
+        stack_push $STACK_NAME "$(pwd)"
         EXECUTABLE_PATH="$(pwd)/$TOOL_NAME"
 
-        echo $EXECUTABLE_PATH
+        printf "Building reports for sample repositories\n"
+        
+        while IFS= read -r -d '' REPOSITORY_DIR; do
+            report_for_tool_and_repo "$EXECUTABLE_PATH" "$TOOL_NAME" "$REPOSITORY_DIR" "$2"
+        done < <(find "$REPOSITORIES_DIR" -maxdepth 1 -mindepth 1 -type d -print0)
+
+        stack_pop "$STACK_NAME" TOOL_DIR
+        cd "$TOOL_DIR" || { printf "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${TOOL_DIR}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
+
+        cleanup_tool "$TOOL_NAME"
     fi
-
-    echo -e "Leaving ${YELLOW}${BOLD}$1${NORMAL}..."
+ 
+    printf "Leaving ${YELLOW}${BOLD}$1${NORMAL}...\n"
     stack_pop "$STACK_NAME" START_DIR
-    cd "$START_DIR" || { echo -e "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${START_DIR}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
+    cd "$START_DIR" || { printf "${RED}ERROR${NORMAL}: could not change directory to ${BOLD}${YELLOW}${START_DIR}${NORMAL}${NO_BOLD}. Aborting..." ; return 1 ;}
 
-    echo -e "\n"
+    printf "\n"
 }
 
-function main {
+main() {
     stack_new $STACK_NAME
 
     for STANDARD in "${!STANDARDS[@]}"; do
@@ -264,13 +306,13 @@ function main {
 
         STANDARD_EXTENSION="${STANDARDS[$STANDARD]}.json"
 
-        echo -e "Writing reports for ${BOLD}$STANDARD${NO_BOLD} in \"$REPORTS_DIR\"\n\n"
+        printf "Writing reports for ${BOLD}$STANDARD${NO_BOLD} in \"$REPORTS_DIR\"\n\n"
 
         while IFS= read -r -d '' TOOL_DIR; do
             reports_for_tool "$TOOL_DIR" "$STANDARD_EXTENSION" "$REPORT_DIR"
         done < <(find "$TOOLS_DIR" -maxdepth 1 -mindepth 1 -type d -print0)
 
-        echo -e "========================================================\n"
+        printf "========================================================\n"
     done
 
     stack_destroy $STACK_NAME
