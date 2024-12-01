@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoftwareIdentity xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd" xml:lang="en-US" name="maven-web-application" tagId="com.mt-maven-web-application-0.0.1-SNAPSHOT-2024-11-29T163723" tagVersion="1" version="0.0.1-SNAPSHOT" versionScheme="multipartnumeric+suffix">
+  <Entity name="MithunTechnologiesDevOps" role="tagCreator softwareCreator" regid="github.com/MithunTechnologiesDevOps" />
+  <Payload xmlns:SHA-256="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:SHA-512="http://www.w3.org/2001/04/xmlenc#sha512">
+    <Directory name="..">
+      <File name="maven-web-application-0.0.1-SNAPSHOT.war" size="5335697" version="0.0.1-SNAPSHOT" SHA-512:hash="1951101fc1fc760e198f4edc2cc1769c21b8c0c281cfd89a6cbda078f41a339c2e30eacaae3b29a31014c1394fa025f93a95776abefb3119d4d6c41a93193b6d" SHA-256:hash="065aeb5291e24d55f8a2c023adb1b1c44f2ac3390ad91d02169d881cc2ccb5dd" />
+      <Directory name="lib">
+        <File name="spring-beans-5.1.2.RELEASE.jar" size="671376" version="5.1.2.RELEASE" SHA-512:hash="fa64088e8c34fa3eaab9d465b8259579be3c620df04969744b3ef1a6467ea81f5cd085979cabb060bba674d956d97a9e6f1a2fcbac13d46510dc4965d1596a1c" SHA-256:hash="131737816184d8e772a6e3bbf46025de432a0cc7a2646fef8d63450ec9444033" />
+        <File name="spring-expression-5.1.2.RELEASE.jar" size="280041" version="5.1.2.RELEASE" SHA-512:hash="8bc6a24e8067cc517987fe4d43eb98bb66ba4c88135359724cac8325b05ba97fce7e05b526318c060fc083818e37f1bf967c637c8b1e383a4c0aec33f75b91b6" SHA-256:hash="24c958b6172da35e6755d62769fa3a8b4ddc430cda31da976f008a7a226f15de" />
+        <File name="spring-web-5.1.2.RELEASE.jar" size="1375184" version="5.1.2.RELEASE" SHA-512:hash="2815d812377c95cc4f9c7e1e7a1787191ded393fef949ae0f9ecb895cfac88505f59a70c3797164fe012fa5e194162a45ca8e5893617b004a3320feb7e3e0808" SHA-256:hash="fc135b74d9aa285c4aa8d9b19e2367817a7cd2d2af53f726b3d1466de428f4b0" />
+        <File name="spring-jcl-5.1.2.RELEASE.jar" size="23623" version="5.1.2.RELEASE" SHA-512:hash="c39f762e76a4599e251f222e069001bbfa22d302407115d337541f9f4d5561da1008983af6d0af5170b47f65f9de139395fc915278f5bbe6963f321dde17edee" SHA-256:hash="857503050793c73c02ae77041e31d66936a4fd59beb97ee6c72fae2bab1993c2" />
+        <File name="spring-core-5.1.2.RELEASE.jar" size="1289379" version="5.1.2.RELEASE" SHA-512:hash="0d6a6eeeb919038d869c96306877a659a35ce6e991ff3ae02472de2df4e26f3de332ca42474cb1a842b9ffe995e2b5ff83efd4fc81f9d13691150d2c612b225d" SHA-256:hash="3f646f7a51bd3a32c89241b899f6cc73dc40ea8275cd3233f4699668bfb839c5" />
+        <File name="spring-context-5.1.2.RELEASE.jar" size="1099343" version="5.1.2.RELEASE" SHA-512:hash="0df689e0e42ebcd9dbeae4f9612e6d73ca8fb44e326760afb9b8d2fd103578861a29da6ad922e3da5ca2ce8c810161551af2dcc446ed520cb0ee724570c34fb7" SHA-256:hash="d280d2622cd01dad237a1d4de335b6869167a737e2b29df3d02552da3ecfeafb" />
+        <File name="spring-webmvc-5.1.2.RELEASE.jar" size="798872" version="5.1.2.RELEASE" SHA-512:hash="915422628f54fe97830f15faa85cebf979aa925d369ba8a4bff0523aea8aaa83f41225273503fafb4c3dbc6da059b4d4997607d5b966b8e37c8fdc540ba3de6f" SHA-256:hash="8da6ebe54db7ebe65e35ad455a56c462afc808664157736d449a384614e08d46" />
+        <File name="json-20160212.jar" size="49176" version="20160212" SHA-512:hash="6f9220f4c88f106d998b52cfe693509ef4b9ae254cabeea7968401fc5d6d6ca3523537e587d0373f39a1a40df3216176b93aee445bd6bab47fe3097ab4426061" SHA-256:hash="0aaf0e7e286ece88fb60b9ba14dd45c05a48e55618876efb7d1b6f19c25e7a29" />
+        <File name="spring-aop-5.1.2.RELEASE.jar" size="368839" version="5.1.2.RELEASE" SHA-512:hash="e8f44f388cb4ac45312056f71f03773bd6c05e2206606437f24d55586cabd308ccaf1deba14be3b8f518fc07b26823974a388ec3b1e78cafb138cc46f7d40145" SHA-256:hash="46ab5d470272b8c3b06714ca27709f9fabdc65ada5ffa4b0744042dbc85c4466" />
+      </Directory>
+    </Directory>
+  </Payload>
+</SoftwareIdentity>
