@@ -1,9 +1,21 @@
 [submodule "assignments/2/data/repositories/kafka"]
 	path = assignments/2/data/repositories/kafka
-	url = https://github.com/apache/kafka.git
+	url = git@github.com:apache/kafka.git
 [submodule "assignments/2/data/repositories/numpy"]
 	path = assignments/2/data/repositories/numpy
-	url = https://github.com/numpy/numpy.git
+	url = git@github.com:numpy/numpy.git
 [submodule "assignments/2/data/repositories/kubernetes"]
 	path = assignments/2/data/repositories/kubernetes
-	url = https://github.com/kubernetes/kubernetes.git
+	url = git@github.com:kubernetes/kubernetes.git
+[submodule "assignments/2/data/tools/syft"]
+	path = assignments/2/data/tools/syft
+	url = git@github.com:anchore/syft.git
+[submodule "assignments/2/data/tools/build-info-go"]
+	path = assignments/2/data/tools/build-info-go
+	url = git@github.com:jfrog/build-info-go.git
+[submodule "assignments/2/data/tools/cdxgen"]
+	path = assignments/2/data/tools/cdxgen
+	url = git@github.com:CycloneDX/cdxgen.git
+[submodule "assignments/2/data/tools/spdx-sbom-generator"]
+	path = assignments/2/data/tools/spdx-sbom-generator
+	url = git@github.com:opensbom-generator/spdx-sbom-generator.git
