@@ -11,8 +11,10 @@ class SpdxSbomGenerator(Tool):
     name = "spdx-sbom-generator"
 
     def build(self) -> None:
-        run(["make", "build"], cwd=self.path)
+        run(["make", "build"], cwd=self.path, check=False)
+
         output = self.path / "bin/spdx-sbom-generator"
+        
         self.executable.unlink(missing_ok=True)
         self.executable.symlink_to(output)
     
@@ -21,9 +23,14 @@ class SpdxSbomGenerator(Tool):
     
     def generate(self, repo: Repository, standard: Standard) -> None:
         output = self.output_path(repo, standard)
+        
         tmp = Path("/tmp/spdx-sbom-generator")
         tmp.mkdir(exist_ok=True)
-        run([self.executable, "--path", repo.path, "--output-dir", tmp, "--format", "json"])
+        
+        run([self.executable, "--path", repo.path, "--output-dir", tmp, "--format", "json"], check=False)
+        
         tmp_out = next(tmp.glob("*.json"))
+        
         move(tmp_out, output)
+        
         tmp.rmdir()

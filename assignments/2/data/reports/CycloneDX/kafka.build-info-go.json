@@ -1,0 +1,79 @@
+
+> Configure project :
+Starting build with version 3.9.0 (commit id unknown) using Gradle 8.8, Java 21 and Scala 2.13.14
+Build properties: maxParallelForks=12, maxScalacThreads=8, maxTestRetries=0
+
+> Task :clients:generatePomFileForMavenJavaPublication
+> Task :server-common:processResources NO-SOURCE
+> Task :core:processResources NO-SOURCE
+> Task :connect:compileJava NO-SOURCE
+> Task :connect:processResources NO-SOURCE
+> Task :connect:classes UP-TO-DATE
+> Task :server:processResources NO-SOURCE
+> Task :server:processTestResources NO-SOURCE
+> Task :compileJava NO-SOURCE
+> Task :storage:storage-api:processResources NO-SOURCE
+> Task :storage:storage-api:processTestResources NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :connect:file:processResources
+> Task :server:createVersionFile
+> Task :server-common:processTestResources
+> Task :connect:api:processResources
+> Task :connect:basic-auth-extension:processResources
+> Task :connect:basic-auth-extension:generatePomFileForMavenJavaPublication
+> Task :connect:jar
+> Task :group-coordinator:processResources
+> Task :jar
+> Task :raft:processResources
+> Task :group-coordinator:group-coordinator-api:processResources NO-SOURCE
+> Task :storage:processResources
+> Task :metadata:processResources
+> Task :server-common:createVersionFile
+> Task :raft:processTestResources
+> Task :group-coordinator:group-coordinator-api:createVersionFile
+> Task :transaction-coordinator:processResources
+> Task :group-coordinator:processTestResources
+> Task :metadata:processTestResources
+> Task :tools:tools-api:processResources NO-SOURCE
+> Task :connect:generateMetadataFileForMavenJavaPublication
+> Task :connect:generatePomFileForMavenJavaPublication
+> Task :storage:createVersionFile
+> Task :connect:basic-auth-extension:srcJar
+> Task :raft:createVersionFile
+> Task :storage:storage-api:createVersionFile
+> Task :connect:basic-auth-extension:processTestResources NO-SOURCE
+> Task :tools:tools-api:createVersionFile
+> Task :core:processTestResources
+> Task :connect:javadoc NO-SOURCE
+> Task :connect:json:processResources
+> Task :connect:runtime:processResources
+> Task :connect:mirror-client:processResources NO-SOURCE
+> Task :connect:file:generatePomFileForMavenJavaPublication
+> Task :connect:test-plugins:processResources
+> Task :connect:json:generatePomFileForMavenJavaPublication
+> Task :connect:transforms:processResources
+> Task :connect:javadocJar
+> Task :connect:test-plugins:generatePomFileForMavenJavaPublication
+> Task :connect:mirror:processResources
+> Task :connect:transforms:generatePomFileForMavenJavaPublication
+> Task :connect:srcJar
+> Task :connect:signMavenJavaPublication FAILED
+> Task :connect:file:srcJar
+> Task :connect:json:srcJar
+> Task :clients:processResources
+> Task :connect:test-plugins:srcJar
+> Task :connect:transforms:srcJar
+> Task :connect:api:generatePomFileForMavenJavaPublication
+> Task :connect:mirror-client:generatePomFileForMavenJavaPublication
+> Task :core:generatePomFileForMavenJavaPublication
+> Task :connect:runtime:processTestResources
+> Task :connect:mirror:generatePomFileForMavenJavaPublication
+> Task :generator:compileJava
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+50 actionable tasks: 50 executed

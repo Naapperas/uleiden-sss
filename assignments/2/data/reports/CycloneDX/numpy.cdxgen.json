@@ -1,0 +1,4197 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:37e4db40-3b4b-48d0-a968-dde67c1e2c31",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2024-12-01T22:06:10Z",
+        "tools": {
+            "components": [
+                {
+                    "group": "@cyclonedx",
+                    "name": "cdxgen",
+                    "version": "11.0.3",
+                    "purl": "pkg:npm/%40cyclonedx/cdxgen@11.0.3",
+                    "type": "application",
+                    "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.0.3",
+                    "publisher": "OWASP Foundation",
+                    "authors": [
+                        {
+                            "name": "OWASP Foundation"
+                        }
+                    ]
+                }
+            ]
+        },
+        "authors": [
+            {
+                "name": "OWASP Foundation"
+            }
+        ],
+        "lifecycles": [
+            {
+                "phase": "build"
+            }
+        ],
+        "component": {
+            "name": "numpy",
+            "version": "2.1.3",
+            "description": "Fundamental package for array computing in Python",
+            "author": "Travis E. Oliphant et al.",
+            "type": "application",
+            "bom-ref": "pkg:pypi/numpy@2.1.3",
+            "purl": "pkg:pypi/numpy@2.1.3"
+        },
+        "properties": [
+            {
+                "name": "cdx:bom:componentTypes",
+                "value": "pypi"
+            }
+        ]
+    },
+    "components": [
+        {
+            "group": "",
+            "name": "cython",
+            "version": "3.0.11",
+            "purl": "pkg:pypi/cython@3.0.11",
+            "type": "library",
+            "bom-ref": "pkg:pypi/cython@3.0.11",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "charset-normalizer",
+            "version": "3.4.0",
+            "purl": "pkg:pypi/charset-normalizer@3.4.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/charset-normalizer@3.4.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "hypothesis",
+            "version": "6.104.1",
+            "purl": "pkg:pypi/hypothesis@6.104.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/hypothesis@6.104.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "attrs",
+            "version": "24.2.0",
+            "purl": "pkg:pypi/attrs@24.2.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/attrs@24.2.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sortedcontainers",
+            "version": "2.4.0",
+            "purl": "pkg:pypi/sortedcontainers@2.4.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sortedcontainers@2.4.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "meson",
+            "version": "1.6.0",
+            "purl": "pkg:pypi/meson@1.6.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/meson@1.6.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "mypy",
+            "version": "1.10.0",
+            "purl": "pkg:pypi/mypy@1.10.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/mypy@1.10.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "typing-extensions",
+            "version": "4.12.2",
+            "purl": "pkg:pypi/typing-extensions@4.12.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/typing-extensions@4.12.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ],
+            "tags": [
+                "devel"
+            ]
+        },
+        {
+            "group": "",
+            "name": "mypy-extensions",
+            "version": "1.0.0",
+            "purl": "pkg:pypi/mypy-extensions@1.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/mypy-extensions@1.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "ninja",
+            "version": "1.11.1.2",
+            "purl": "pkg:pypi/ninja@1.11.1.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/ninja@1.11.1.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pytest-cov",
+            "version": "4.1.0",
+            "purl": "pkg:pypi/pytest-cov@4.1.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pytest-cov@4.1.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pytest",
+            "version": "7.4.0",
+            "purl": "pkg:pypi/pytest@7.4.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pytest@7.4.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "iniconfig",
+            "version": "2.0.0",
+            "purl": "pkg:pypi/iniconfig@2.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/iniconfig@2.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "packaging",
+            "version": "24.2",
+            "purl": "pkg:pypi/packaging@24.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/packaging@24.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pluggy",
+            "version": "1.5.0",
+            "purl": "pkg:pypi/pluggy@1.5.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pluggy@1.5.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "coverage",
+            "version": "7.6.8",
+            "purl": "pkg:pypi/coverage@7.6.8",
+            "type": "library",
+            "bom-ref": "pkg:pypi/coverage@7.6.8",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pytest-xdist",
+            "version": "3.6.1",
+            "purl": "pkg:pypi/pytest-xdist@3.6.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pytest-xdist@3.6.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "execnet",
+            "version": "2.1.1",
+            "purl": "pkg:pypi/execnet@2.1.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/execnet@2.1.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pytz",
+            "version": "2023.3.post1",
+            "purl": "pkg:pypi/pytz@2023.3.post1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pytz@2023.3.post1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "gitpython",
+            "version": "3.1.43",
+            "purl": "pkg:pypi/gitpython@3.1.43",
+            "type": "library",
+            "bom-ref": "pkg:pypi/gitpython@3.1.43",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "gitdb",
+            "version": "4.0.11",
+            "purl": "pkg:pypi/gitdb@4.0.11",
+            "type": "library",
+            "bom-ref": "pkg:pypi/gitdb@4.0.11",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "smmap",
+            "version": "5.0.1",
+            "purl": "pkg:pypi/smmap@5.0.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/smmap@5.0.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "paver",
+            "version": "1.3.4",
+            "purl": "pkg:pypi/paver@1.3.4",
+            "type": "library",
+            "bom-ref": "pkg:pypi/paver@1.3.4",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "six",
+            "version": "1.16.0",
+            "purl": "pkg:pypi/six@1.16.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/six@1.16.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pygithub",
+            "version": "2.5.0",
+            "purl": "pkg:pypi/pygithub@2.5.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pygithub@2.5.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "PyNaCl",
+            "version": "1.5.0",
+            "purl": "pkg:pypi/pynacl@1.5.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pynacl@1.5.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "cffi",
+            "version": "1.17.1",
+            "purl": "pkg:pypi/cffi@1.17.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/cffi@1.17.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ],
+            "tags": [
+                "native"
+            ]
+        },
+        {
+            "group": "",
+            "name": "pycparser",
+            "version": "2.22",
+            "purl": "pkg:pypi/pycparser@2.22",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pycparser@2.22",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ],
+            "tags": [
+                "parse"
+            ]
+        },
+        {
+            "group": "",
+            "name": "requests",
+            "version": "2.32.3",
+            "purl": "pkg:pypi/requests@2.32.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/requests@2.32.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "idna",
+            "version": "3.10",
+            "purl": "pkg:pypi/idna@3.10",
+            "type": "library",
+            "bom-ref": "pkg:pypi/idna@3.10",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "urllib3",
+            "version": "2.2.3",
+            "purl": "pkg:pypi/urllib3@2.2.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/urllib3@2.2.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "certifi",
+            "version": "2024.8.30",
+            "purl": "pkg:pypi/certifi@2024.8.30",
+            "type": "library",
+            "bom-ref": "pkg:pypi/certifi@2024.8.30",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "PyJWT",
+            "version": "2.10.1",
+            "purl": "pkg:pypi/pyjwt@2.10.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pyjwt@2.10.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "Deprecated",
+            "version": "1.2.15",
+            "purl": "pkg:pypi/deprecated@1.2.15",
+            "type": "library",
+            "bom-ref": "pkg:pypi/deprecated@1.2.15",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "wrapt",
+            "version": "1.17.0",
+            "purl": "pkg:pypi/wrapt@1.17.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/wrapt@1.17.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "beautifulsoup4",
+            "version": "4.12.3",
+            "purl": "pkg:pypi/beautifulsoup4@4.12.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/beautifulsoup4@4.12.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "soupsieve",
+            "version": "2.6",
+            "purl": "pkg:pypi/soupsieve@2.6",
+            "type": "library",
+            "bom-ref": "pkg:pypi/soupsieve@2.6",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pygments",
+            "version": "2.18.0",
+            "purl": "pkg:pypi/pygments@2.18.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pygments@2.18.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "readme-renderer",
+            "version": "44.0",
+            "purl": "pkg:pypi/readme-renderer@44.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/readme-renderer@44.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "nh3",
+            "version": "0.2.19",
+            "purl": "pkg:pypi/nh3@0.2.19",
+            "type": "library",
+            "bom-ref": "pkg:pypi/nh3@0.2.19",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "docutils",
+            "version": "0.21.2",
+            "purl": "pkg:pypi/docutils@0.21.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/docutils@0.21.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "twine",
+            "version": "6.0.1",
+            "purl": "pkg:pypi/twine@6.0.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/twine@6.0.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pkginfo",
+            "version": "1.11.2",
+            "purl": "pkg:pypi/pkginfo@1.11.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pkginfo@1.11.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "requests-toolbelt",
+            "version": "1.0.0",
+            "purl": "pkg:pypi/requests-toolbelt@1.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/requests-toolbelt@1.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "keyring",
+            "version": "25.5.0",
+            "purl": "pkg:pypi/keyring@25.5.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/keyring@25.5.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jaraco.classes",
+            "version": "3.4.0",
+            "purl": "pkg:pypi/jaraco.classes@3.4.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/jaraco.classes@3.4.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "more-itertools",
+            "version": "10.5.0",
+            "purl": "pkg:pypi/more-itertools@10.5.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/more-itertools@10.5.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jaraco.functools",
+            "version": "4.1.0",
+            "purl": "pkg:pypi/jaraco.functools@4.1.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/jaraco.functools@4.1.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jaraco.context",
+            "version": "6.0.1",
+            "purl": "pkg:pypi/jaraco.context@6.0.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/jaraco.context@6.0.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "SecretStorage",
+            "version": "3.3.3",
+            "purl": "pkg:pypi/secretstorage@3.3.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/secretstorage@3.3.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "cryptography",
+            "version": "44.0.0",
+            "purl": "pkg:pypi/cryptography@44.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/cryptography@44.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jeepney",
+            "version": "0.8.0",
+            "purl": "pkg:pypi/jeepney@0.8.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/jeepney@0.8.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "rfc3986",
+            "version": "2.0.0",
+            "purl": "pkg:pypi/rfc3986@2.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/rfc3986@2.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "rich",
+            "version": "13.9.4",
+            "purl": "pkg:pypi/rich@13.9.4",
+            "type": "library",
+            "bom-ref": "pkg:pypi/rich@13.9.4",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "markdown-it-py",
+            "version": "3.0.0",
+            "purl": "pkg:pypi/markdown-it-py@3.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/markdown-it-py@3.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "mdurl",
+            "version": "0.1.2",
+            "purl": "pkg:pypi/mdurl@0.1.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/mdurl@0.1.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/release_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pycodestyle",
+            "version": "2.8.0",
+            "purl": "pkg:pypi/pycodestyle@2.8.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pycodestyle@2.8.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/linter_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "hypothesis",
+            "version": "6.81.1",
+            "purl": "pkg:pypi/hypothesis@6.81.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/hypothesis@6.81.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/emscripten_test_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "breathe",
+            "version": "4.35.0",
+            "purl": "pkg:pypi/breathe@4.35.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/breathe@4.35.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinx",
+            "version": "7.2.6",
+            "purl": "pkg:pypi/sphinx@7.2.6",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinx@7.2.6",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinxcontrib-applehelp",
+            "version": "2.0.0",
+            "purl": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinxcontrib-devhelp",
+            "version": "2.0.0",
+            "purl": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinxcontrib-jsmath",
+            "version": "1.0.1",
+            "purl": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinxcontrib-htmlhelp",
+            "version": "2.1.0",
+            "purl": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinxcontrib-serializinghtml",
+            "version": "2.0.0",
+            "purl": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinxcontrib-qthelp",
+            "version": "2.0.0",
+            "purl": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jinja2",
+            "version": "3.1.4",
+            "purl": "pkg:pypi/jinja2@3.1.4",
+            "type": "library",
+            "bom-ref": "pkg:pypi/jinja2@3.1.4",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "MarkupSafe",
+            "version": "3.0.2",
+            "purl": "pkg:pypi/markupsafe@3.0.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/markupsafe@3.0.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "docutils",
+            "version": "0.20.1",
+            "purl": "pkg:pypi/docutils@0.20.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/docutils@0.20.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "snowballstemmer",
+            "version": "2.2.0",
+            "purl": "pkg:pypi/snowballstemmer@2.2.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/snowballstemmer@2.2.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "babel",
+            "version": "2.16.0",
+            "purl": "pkg:pypi/babel@2.16.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/babel@2.16.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "alabaster",
+            "version": "0.7.16",
+            "purl": "pkg:pypi/alabaster@0.7.16",
+            "type": "library",
+            "bom-ref": "pkg:pypi/alabaster@0.7.16",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "imagesize",
+            "version": "1.4.1",
+            "purl": "pkg:pypi/imagesize@1.4.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/imagesize@1.4.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "ipython",
+            "version": "8.30.0",
+            "purl": "pkg:pypi/ipython@8.30.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/ipython@8.30.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "decorator",
+            "version": "5.1.1",
+            "purl": "pkg:pypi/decorator@5.1.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/decorator@5.1.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "jedi",
+            "version": "0.19.2",
+            "purl": "pkg:pypi/jedi@0.19.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/jedi@0.19.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "parso",
+            "version": "0.8.4",
+            "purl": "pkg:pypi/parso@0.8.4",
+            "type": "library",
+            "bom-ref": "pkg:pypi/parso@0.8.4",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "matplotlib-inline",
+            "version": "0.1.7",
+            "purl": "pkg:pypi/matplotlib-inline@0.1.7",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/matplotlib-inline@0.1.7",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "traitlets",
+            "version": "5.14.3",
+            "purl": "pkg:pypi/traitlets@5.14.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/traitlets@5.14.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pexpect",
+            "version": "4.9.0",
+            "purl": "pkg:pypi/pexpect@4.9.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pexpect@4.9.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "ptyprocess",
+            "version": "0.7.0",
+            "purl": "pkg:pypi/ptyprocess@0.7.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/ptyprocess@0.7.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "prompt-toolkit",
+            "version": "3.0.48",
+            "purl": "pkg:pypi/prompt-toolkit@3.0.48",
+            "type": "library",
+            "bom-ref": "pkg:pypi/prompt-toolkit@3.0.48",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "wcwidth",
+            "version": "0.2.13",
+            "purl": "pkg:pypi/wcwidth@0.2.13",
+            "type": "library",
+            "bom-ref": "pkg:pypi/wcwidth@0.2.13",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "stack-data",
+            "version": "0.6.3",
+            "purl": "pkg:pypi/stack-data@0.6.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/stack-data@0.6.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "executing",
+            "version": "2.1.0",
+            "purl": "pkg:pypi/executing@2.1.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/executing@2.1.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "asttokens",
+            "version": "3.0.0",
+            "purl": "pkg:pypi/asttokens@3.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/asttokens@3.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pure-eval",
+            "version": "0.2.3",
+            "purl": "pkg:pypi/pure-eval@0.2.3",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pure-eval@0.2.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "matplotlib",
+            "version": "3.9.3",
+            "purl": "pkg:pypi/matplotlib@3.9.3",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/matplotlib@3.9.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "contourpy",
+            "version": "1.3.1",
+            "purl": "pkg:pypi/contourpy@1.3.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/contourpy@1.3.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "numpy",
+            "version": "2.1.3",
+            "purl": "pkg:pypi/numpy@2.1.3",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/numpy@2.1.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "cycler",
+            "version": "0.12.1",
+            "purl": "pkg:pypi/cycler@0.12.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/cycler@0.12.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "fonttools",
+            "version": "4.55.0",
+            "purl": "pkg:pypi/fonttools@4.55.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/fonttools@4.55.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "kiwisolver",
+            "version": "1.4.7",
+            "purl": "pkg:pypi/kiwisolver@1.4.7",
+            "type": "library",
+            "bom-ref": "pkg:pypi/kiwisolver@1.4.7",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pillow",
+            "version": "11.0.0",
+            "purl": "pkg:pypi/pillow@11.0.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pillow@11.0.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pyparsing",
+            "version": "3.2.0",
+            "purl": "pkg:pypi/pyparsing@3.2.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pyparsing@3.2.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "python-dateutil",
+            "version": "2.9.0.post0",
+            "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "numpydoc",
+            "version": "1.4.0",
+            "purl": "pkg:pypi/numpydoc@1.4.0",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/numpydoc@1.4.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "pandas",
+            "version": "2.2.3",
+            "purl": "pkg:pypi/pandas@2.2.3",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/pandas@2.2.3",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "tzdata",
+            "version": "2024.2",
+            "purl": "pkg:pypi/tzdata@2024.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/tzdata@2024.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pickleshare",
+            "version": "0.7.5",
+            "purl": "pkg:pypi/pickleshare@0.7.5",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pickleshare@0.7.5",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pydata-sphinx-theme",
+            "version": "0.16.0",
+            "purl": "pkg:pypi/pydata-sphinx-theme@0.16.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pydata-sphinx-theme@0.16.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "accessible-pygments",
+            "version": "0.0.5",
+            "purl": "pkg:pypi/accessible-pygments@0.0.5",
+            "type": "library",
+            "bom-ref": "pkg:pypi/accessible-pygments@0.0.5",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "scipy",
+            "version": "1.14.1",
+            "purl": "pkg:pypi/scipy@1.14.1",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/scipy@1.14.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinx-copybutton",
+            "version": "0.5.2",
+            "purl": "pkg:pypi/sphinx-copybutton@0.5.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinx-copybutton@0.5.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "sphinx-design",
+            "version": "0.6.1",
+            "purl": "pkg:pypi/sphinx-design@0.6.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/sphinx-design@0.6.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "toml",
+            "version": "0.10.2",
+            "purl": "pkg:pypi/toml@0.10.2",
+            "type": "library",
+            "bom-ref": "pkg:pypi/toml@0.10.2",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "towncrier",
+            "version": "24.8.0",
+            "purl": "pkg:pypi/towncrier@24.8.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/towncrier@24.8.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "click",
+            "version": "8.1.7",
+            "purl": "pkg:pypi/click@8.1.7",
+            "type": "library",
+            "bom-ref": "pkg:pypi/click@8.1.7",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/doc_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "importlib-metadata",
+            "version": "8.5.0",
+            "purl": "pkg:pypi/importlib-metadata@8.5.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/importlib-metadata@8.5.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/ci_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "zipp",
+            "version": "3.21.0",
+            "purl": "pkg:pypi/zipp@3.21.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/zipp@3.21.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/ci_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/ci_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "scipy-openblas32",
+            "version": "0.3.27.44.6",
+            "purl": "pkg:pypi/scipy-openblas32@0.3.27.44.6",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/scipy-openblas32@0.3.27.44.6",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/ci_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "scipy-openblas64",
+            "version": "0.3.27.44.6",
+            "purl": "pkg:pypi/scipy-openblas64@0.3.27.44.6",
+            "type": "framework",
+            "bom-ref": "pkg:pypi/scipy-openblas64@0.3.27.44.6",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/ci_requirements.txt"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "",
+            "name": "spin",
+            "version": "0.13",
+            "purl": "pkg:pypi/spin@0.13",
+            "type": "library",
+            "bom-ref": "pkg:pypi/spin@0.13",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/ci_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "build",
+            "version": "1.2.2.post1",
+            "purl": "pkg:pypi/build@1.2.2.post1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/build@1.2.2.post1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pyproject-hooks",
+            "version": "1.2.0",
+            "purl": "pkg:pypi/pyproject-hooks@1.2.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pyproject-hooks@1.2.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "meson-python",
+            "version": "0.17.1",
+            "purl": "pkg:pypi/meson-python@0.17.1",
+            "type": "library",
+            "bom-ref": "pkg:pypi/meson-python@0.17.1",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "pyproject-metadata",
+            "version": "0.9.0",
+            "purl": "pkg:pypi/pyproject-metadata@0.9.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/pyproject-metadata@0.9.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0.8,
+                        "methods": [
+                            {
+                                "technique": "manifest-analysis",
+                                "confidence": 0.8,
+                                "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "spin",
+            "version": "0.8",
+            "purl": "pkg:pypi/spin@0.8",
+            "type": "library",
+            "bom-ref": "pkg:pypi/spin@0.8",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/build_requirements.txt"
+                }
+            ]
+        },
+        {
+            "group": "",
+            "name": "readme-renderer",
+            "version": "43.0",
+            "purl": "pkg:pypi/readme-renderer@43.0",
+            "type": "library",
+            "bom-ref": "pkg:pypi/readme-renderer@43.0",
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 1,
+                        "methods": [
+                            {
+                                "technique": "instrumentation",
+                                "confidence": 1,
+                                "value": "/tmp/cdxgen-venv-tB44Bb"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "/home/naapperas/workspace/uni/5-ano/sss/assignments/2/data/repositories/numpy/requirements/all_requirements.txt"
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "pkg:pypi/cython@3.0.11",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/charset-normalizer@3.4.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/attrs@24.2.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sortedcontainers@2.4.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/hypothesis@6.104.1",
+            "dependsOn": [
+                "pkg:pypi/attrs@24.2.0",
+                "pkg:pypi/sortedcontainers@2.4.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/meson@1.6.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/typing-extensions@4.12.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/mypy-extensions@1.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/mypy@1.10.0",
+            "dependsOn": [
+                "pkg:pypi/mypy-extensions@1.0.0",
+                "pkg:pypi/typing-extensions@4.12.2"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/ninja@1.11.1.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pytest@7.4.0",
+            "dependsOn": [
+                "pkg:pypi/iniconfig@2.0.0",
+                "pkg:pypi/packaging@24.2",
+                "pkg:pypi/pluggy@1.5.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/iniconfig@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/packaging@24.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pluggy@1.5.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/coverage@7.6.8",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pytest-cov@4.1.0",
+            "dependsOn": [
+                "pkg:pypi/coverage@7.6.8",
+                "pkg:pypi/pytest@7.4.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/execnet@2.1.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pytest-xdist@3.6.1",
+            "dependsOn": [
+                "pkg:pypi/execnet@2.1.1",
+                "pkg:pypi/pytest@7.4.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pytz@2023.3.post1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/gitdb@4.0.11",
+            "dependsOn": [
+                "pkg:pypi/smmap@5.0.1"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/smmap@5.0.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/gitpython@3.1.43",
+            "dependsOn": [
+                "pkg:pypi/gitdb@4.0.11"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/six@1.16.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/paver@1.3.4",
+            "dependsOn": [
+                "pkg:pypi/six@1.16.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pynacl@1.5.0",
+            "dependsOn": [
+                "pkg:pypi/cffi@1.17.1"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/cffi@1.17.1",
+            "dependsOn": [
+                "pkg:pypi/pycparser@2.22"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pycparser@2.22",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/requests@2.32.3",
+            "dependsOn": [
+                "pkg:pypi/certifi@2024.8.30",
+                "pkg:pypi/charset-normalizer@3.4.0",
+                "pkg:pypi/idna@3.10",
+                "pkg:pypi/urllib3@2.2.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/idna@3.10",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/urllib3@2.2.3",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/certifi@2024.8.30",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pyjwt@2.10.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/deprecated@1.2.15",
+            "dependsOn": [
+                "pkg:pypi/wrapt@1.17.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/wrapt@1.17.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pygithub@2.5.0",
+            "dependsOn": [
+                "pkg:pypi/deprecated@1.2.15",
+                "pkg:pypi/pyjwt@2.10.1",
+                "pkg:pypi/pynacl@1.5.0",
+                "pkg:pypi/requests@2.32.3",
+                "pkg:pypi/typing-extensions@4.12.2",
+                "pkg:pypi/urllib3@2.2.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/soupsieve@2.6",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/beautifulsoup4@4.12.3",
+            "dependsOn": [
+                "pkg:pypi/soupsieve@2.6"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pygments@2.18.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/nh3@0.2.19",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/docutils@0.21.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/readme-renderer@44.0",
+            "dependsOn": [
+                "pkg:pypi/docutils@0.20.1",
+                "pkg:pypi/docutils@0.21.2",
+                "pkg:pypi/nh3@0.2.19",
+                "pkg:pypi/pygments@2.18.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pkginfo@1.11.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/requests-toolbelt@1.0.0",
+            "dependsOn": [
+                "pkg:pypi/requests@2.32.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/keyring@25.5.0",
+            "dependsOn": [
+                "pkg:pypi/jaraco.classes@3.4.0",
+                "pkg:pypi/jaraco.context@6.0.1",
+                "pkg:pypi/jaraco.functools@4.1.0",
+                "pkg:pypi/jeepney@0.8.0",
+                "pkg:pypi/secretstorage@3.3.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/jaraco.classes@3.4.0",
+            "dependsOn": [
+                "pkg:pypi/more-itertools@10.5.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/more-itertools@10.5.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/jaraco.functools@4.1.0",
+            "dependsOn": [
+                "pkg:pypi/more-itertools@10.5.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/jaraco.context@6.0.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/secretstorage@3.3.3",
+            "dependsOn": [
+                "pkg:pypi/cryptography@44.0.0",
+                "pkg:pypi/jeepney@0.8.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/cryptography@44.0.0",
+            "dependsOn": [
+                "pkg:pypi/cffi@1.17.1"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/jeepney@0.8.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/rfc3986@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/rich@13.9.4",
+            "dependsOn": [
+                "pkg:pypi/markdown-it-py@3.0.0",
+                "pkg:pypi/pygments@2.18.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/markdown-it-py@3.0.0",
+            "dependsOn": [
+                "pkg:pypi/mdurl@0.1.2"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/mdurl@0.1.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/twine@6.0.1",
+            "dependsOn": [
+                "pkg:pypi/keyring@25.5.0",
+                "pkg:pypi/packaging@24.2",
+                "pkg:pypi/pkginfo@1.11.2",
+                "pkg:pypi/readme-renderer@43.0",
+                "pkg:pypi/readme-renderer@44.0",
+                "pkg:pypi/requests-toolbelt@1.0.0",
+                "pkg:pypi/requests@2.32.3",
+                "pkg:pypi/rfc3986@2.0.0",
+                "pkg:pypi/rich@13.9.4",
+                "pkg:pypi/urllib3@2.2.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pycodestyle@2.8.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/hypothesis@6.81.1",
+            "dependsOn": [
+                "pkg:pypi/attrs@24.2.0",
+                "pkg:pypi/sortedcontainers@2.4.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/sphinx@7.2.6",
+            "dependsOn": [
+                "pkg:pypi/alabaster@0.7.16",
+                "pkg:pypi/babel@2.16.0",
+                "pkg:pypi/docutils@0.20.1",
+                "pkg:pypi/imagesize@1.4.1",
+                "pkg:pypi/jinja2@3.1.4",
+                "pkg:pypi/packaging@24.2",
+                "pkg:pypi/pygments@2.18.0",
+                "pkg:pypi/requests@2.32.3",
+                "pkg:pypi/snowballstemmer@2.2.0",
+                "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+                "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+                "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+                "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+                "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+                "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/sphinxcontrib-applehelp@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sphinxcontrib-devhelp@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sphinxcontrib-jsmath@1.0.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sphinxcontrib-htmlhelp@2.1.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sphinxcontrib-serializinghtml@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sphinxcontrib-qthelp@2.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/jinja2@3.1.4",
+            "dependsOn": [
+                "pkg:pypi/markupsafe@3.0.2"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/markupsafe@3.0.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/docutils@0.20.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/snowballstemmer@2.2.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/babel@2.16.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/alabaster@0.7.16",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/imagesize@1.4.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/breathe@4.35.0",
+            "dependsOn": [
+                "pkg:pypi/docutils@0.20.1",
+                "pkg:pypi/sphinx@7.2.6"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/decorator@5.1.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/jedi@0.19.2",
+            "dependsOn": [
+                "pkg:pypi/parso@0.8.4"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/parso@0.8.4",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/matplotlib-inline@0.1.7",
+            "dependsOn": [
+                "pkg:pypi/traitlets@5.14.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/traitlets@5.14.3",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pexpect@4.9.0",
+            "dependsOn": [
+                "pkg:pypi/ptyprocess@0.7.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/ptyprocess@0.7.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/prompt-toolkit@3.0.48",
+            "dependsOn": [
+                "pkg:pypi/wcwidth@0.2.13"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/wcwidth@0.2.13",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/stack-data@0.6.3",
+            "dependsOn": [
+                "pkg:pypi/asttokens@3.0.0",
+                "pkg:pypi/executing@2.1.0",
+                "pkg:pypi/pure-eval@0.2.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/executing@2.1.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/asttokens@3.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pure-eval@0.2.3",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/ipython@8.30.0",
+            "dependsOn": [
+                "pkg:pypi/decorator@5.1.1",
+                "pkg:pypi/jedi@0.19.2",
+                "pkg:pypi/matplotlib-inline@0.1.7",
+                "pkg:pypi/pexpect@4.9.0",
+                "pkg:pypi/prompt-toolkit@3.0.48",
+                "pkg:pypi/pygments@2.18.0",
+                "pkg:pypi/stack-data@0.6.3",
+                "pkg:pypi/traitlets@5.14.3"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/contourpy@1.3.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/numpy@2.1.3",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/cycler@0.12.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/fonttools@4.55.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/kiwisolver@1.4.7",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pillow@11.0.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pyparsing@3.2.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+            "dependsOn": [
+                "pkg:pypi/six@1.16.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/matplotlib@3.9.3",
+            "dependsOn": [
+                "pkg:pypi/contourpy@1.3.1",
+                "pkg:pypi/cycler@0.12.1",
+                "pkg:pypi/fonttools@4.55.0",
+                "pkg:pypi/kiwisolver@1.4.7",
+                "pkg:pypi/packaging@24.2",
+                "pkg:pypi/pillow@11.0.0",
+                "pkg:pypi/pyparsing@3.2.0",
+                "pkg:pypi/python-dateutil@2.9.0.post0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/numpydoc@1.4.0",
+            "dependsOn": [
+                "pkg:pypi/jinja2@3.1.4",
+                "pkg:pypi/sphinx@7.2.6"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/tzdata@2024.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/pandas@2.2.3",
+            "dependsOn": [
+                "pkg:pypi/python-dateutil@2.9.0.post0",
+                "pkg:pypi/pytz@2023.3.post1",
+                "pkg:pypi/tzdata@2024.2"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pickleshare@0.7.5",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/accessible-pygments@0.0.5",
+            "dependsOn": [
+                "pkg:pypi/pygments@2.18.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pydata-sphinx-theme@0.16.0",
+            "dependsOn": [
+                "pkg:pypi/accessible-pygments@0.0.5",
+                "pkg:pypi/babel@2.16.0",
+                "pkg:pypi/beautifulsoup4@4.12.3",
+                "pkg:pypi/docutils@0.20.1",
+                "pkg:pypi/pygments@2.18.0",
+                "pkg:pypi/sphinx@7.2.6",
+                "pkg:pypi/typing-extensions@4.12.2"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/scipy@1.14.1",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/sphinx-copybutton@0.5.2",
+            "dependsOn": [
+                "pkg:pypi/sphinx@7.2.6"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/sphinx-design@0.6.1",
+            "dependsOn": [
+                "pkg:pypi/sphinx@7.2.6"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/toml@0.10.2",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/click@8.1.7",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/towncrier@24.8.0",
+            "dependsOn": [
+                "pkg:pypi/click@8.1.7",
+                "pkg:pypi/jinja2@3.1.4"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/zipp@3.21.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/importlib-metadata@8.5.0",
+            "dependsOn": [
+                "pkg:pypi/zipp@3.21.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/scipy-openblas32@0.3.27.44.6",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/scipy-openblas64@0.3.27.44.6",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/spin@0.13",
+            "dependsOn": [
+                "pkg:pypi/click@8.1.7",
+                "pkg:pypi/importlib-metadata@8.5.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pyproject-hooks@1.2.0",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:pypi/build@1.2.2.post1",
+            "dependsOn": [
+                "pkg:pypi/packaging@24.2",
+                "pkg:pypi/pyproject-hooks@1.2.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/pyproject-metadata@0.9.0",
+            "dependsOn": [
+                "pkg:pypi/packaging@24.2"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/meson-python@0.17.1",
+            "dependsOn": [
+                "pkg:pypi/meson@1.6.0",
+                "pkg:pypi/packaging@24.2",
+                "pkg:pypi/pyproject-metadata@0.9.0"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/spin@0.8",
+            "dependsOn": [
+                "pkg:pypi/click@8.1.7"
+            ]
+        },
+        {
+            "ref": "pkg:pypi/readme-renderer@43.0",
+            "dependsOn": [
+                "pkg:pypi/docutils@0.20.1",
+                "pkg:pypi/nh3@0.2.19",
+                "pkg:pypi/pygments@2.18.0"
+            ]
+        }
+    ],
+    "annotations": []
+}
