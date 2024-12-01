@@ -8,7 +8,7 @@ Each one of the three standard formats focuses on a specific part of the softwar
 
 \subsubsection{CycloneDX} \label{dataset:standard:cdx}
 
-CycloneDX \cite{standards:sbom:cyclonedx} is an SBOM standard format developed by the CycloneDX Core Working Group and backed by the OWASP Foundation with a focus on "cyber-risk reduction" \cite{standards:sbom:cyclonedx} and security \cite{article:sbom-study}. The standard supports writing BOMs for several domains of software development, such as Software BOMs (SBOMs), Cryptographic BOMs (CBOMs), Software-as-a-Service BOMs (SaaSBOMs), among others. Over 200 tools related to CycloneDX's SBOM format are available at \href{https://cyclonedx.org/tool-center/}{\underline{CycloneDX's official tool webpage}}.
+CycloneDX \cite{standards:sbom:cyclonedx} is an SBOM standard format developed by the CycloneDX Core Working Group and backed by the OWASP Foundation with a focus on "cyber-risk reduction" \cite{standards:sbom:cyclonedx} and security \cite{article:sbom-study}. The standard supports writing BOMs for several domains of software development, such as Software BOMs (SBOMs), Cryptographic BOMs (CBOMs), Software-as-a-Service BOMs (SaaSBOMs), among others. Over 200 tools related to CycloneDX's SBOM format are available at \href{https://cyclonedx.org/tool-center/}{CycloneDX's official tool webpage}.
 
 For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 3 were chosen: CycloneDX \verb|cdxgen| \cite{repository:cyclonedx:cdxgen}, \verb|build-info-go| \cite{repository:cyclonedx:build-info-go} and \verb|syft| \cite{repository:cyclonedx:syft}. \verb|syft| also supports SPDX, which will be discussed in \ref{dataset:standard:spdx}.
 
@@ -52,7 +52,7 @@ To ensure a fair comparison between standards, we chose a representative set of 
 As such, we have picked 3 repositories from GitHub:
 
 \begin{itemize}
-    \item Apache Kafka \cite{repository:dataset:kafka} is a modern event-streaming platform written in Java by the Apache Software Foundation. Initially developed at Linkedin to accommodate their growing message processing needs, it now serves as the backbone for many asynchronous, event-driven and streaming systems around the world. \red{This might change to another, Maven-based project}
+    \item Apache Kafka \cite{repository:dataset:kafka} is a modern event-streaming platform written in Java by the Apache Software Foundation. Initially developed at Linkedin to accommodate their growing message processing needs, it now serves as the backbone for many asynchronous, event-driven and streaming systems around the world.
     \item numpy \cite{repository:dataset:numpy} is a Python library that provides a "multi-dimensional array object" and utilities and operations built around array objects for fast manipulation. Currently it supports most of the mainstream scientific and machine learning packages available, like SciPy and SciKit Learn.
     \item Kubernetes \cite{repository:dataset:k8s} is a container orchestration tool initially developed at Google to mimic their internal system Borg. It supports user defined-workloads and maintains a constant system state, ensuring high-availability and reliability.
 \end{itemize}
