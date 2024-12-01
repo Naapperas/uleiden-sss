@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from pathlib import Path
 
-from .standards import Standard
-from .repositories import Repository
+from .standard import Standard
+from .repository import Repository
 from .paths import TOOLS, EXECUTABLES
 
 class Tool(ABC):

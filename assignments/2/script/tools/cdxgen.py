@@ -1,6 +1,6 @@
 from ..tool import Tool
-from ..standards import Standard
-from ..repositories import Repository
+from ..standard import Standard
+from ..repository import Repository
 
 class CDXGen(Tool):
     name = "cdxgen"
@@ -11,5 +11,5 @@ class CDXGen(Tool):
     def supports(self, standard: Standard) -> bool:
         return standard == Standard.CYCLONE_DX
 
-    def generate(self, repo: Repository, standard: Standard) -> str:
+    def generate(self, repo: Repository, standard: Standard) -> None:
         pass

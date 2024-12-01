@@ -1,17 +1,19 @@
 import traceback
 from itertools import product
 
-from .repositories import Repository
-from .standards import Standard
+from .repository import Repository
+from .standard import Standard
 from .util import error
 
 from .tools.build_info_go import BuildInfo
 from .tools.cdxgen import CDXGen
+from .tools.spdx_sbom_generator import SpdxSbomGenerator
 from .tools.syft import Syft
 
 TOOLS = {
     BuildInfo(),
     CDXGen(),
+    SpdxSbomGenerator(),
     Syft(),
 }
 

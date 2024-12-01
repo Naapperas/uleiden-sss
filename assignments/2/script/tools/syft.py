@@ -1,7 +1,7 @@
 from subprocess import run
 
-from ..repositories import Repository
-from ..standards import Standard
+from ..repository import Repository
+from ..standard import Standard
 from ..tool import Tool
 
 class Syft(Tool):
@@ -16,7 +16,7 @@ class Syft(Tool):
     def supports(self, standard: Standard) -> bool:
         return standard == Standard.CYCLONE_DX or standard == Standard.SPDX
 
-    def generate(self, repo: Repository, standard: Standard):
+    def generate(self, repo: Repository, standard: Standard) -> None:
         fmt = "spdx-json" if standard == Standard.SPDX else "cyclonedx"
         output = self.output_path(repo, standard)
 

@@ -1,8 +1,8 @@
 from subprocess import run
 
 from ..package_manager import PackageManager
-from ..repositories import Repository 
-from ..standards import Standard
+from ..repository import Repository 
+from ..standard import Standard
 from ..tool import Tool
 
 class BuildInfo(Tool):
@@ -17,4 +17,4 @@ class BuildInfo(Tool):
     def generate(self, repo: Repository, standard: Standard) -> None:
         output = self.output_path(repo, standard)
         command = {PackageManager.GO: "go", PackageManager.GRADLE: "gradle", PackageManager.PIP: "pip"}[repo.package_manager]
-        run([self.executable, command, "--format", "cyclonedx/json"], cwd=repo.path, stdout=output.open("w", encoding="utf-8"))
+        run([self.executable, command, "--format", "cyclonedx/json"], cwd=repo.path, env={"GOWORK": "off"}, stdout=output.open("w", encoding="utf-8"))
