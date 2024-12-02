@@ -1,6 +1,22 @@
 \section{Results and Discussion} \label{results}
 
+After running the tool developed by the authors to aid in programmatically generating SBOMs for the example repositories chosen, a total of 13 files have been generated: 9 CycloneDX SBOMs and 4 SPDX SBOMs. No SWID Tag files could be generated using the tool. Nonetheless, a SWID Tag file could be generated outside of the "standard" process. Further discussion is divided per SBOM Standard.
+
 \subsection{CycloneDX} \label{results:cdx}
+
+Comparing the outputs of the 3 CycloneDX tools used (\verb|cdxgen|, \verb|syft| and \verb|build-info-go|), it is worth noting that all produce SBOMs respecting the same version (CycloneDX Version 1.6), so comparisons can more easily be made. Also, during the development of the tool and the writing of this report, \verb|build-info-go| stopped being able to generate an SBOM for Apache Kafka, so we will be using an older SBOM for this comparison.
+
+First and foremost, for the 3 repositories analyzed, it is clear that \verb|build-info-go| generates the least valuable SBOMs out of the 3 tools, containing only basic metadata, non-exhaustive component information and component dependencies. It is even the case that no components and dependencies could be found for \textit{numpy}. This can be due to the fact the BuildInfo itself is a fairly new format which might not contemplate much of the information that other tools take into account, which can also affect the conversion from BuildInfo into CycloneDX.
+
+Out of the three tools \verb|syft| produces the biggest SBOMs in terms of number of lines. At a first glance this might sound positive but when further analysis is done this is not the case: \verb|syft| generates a lengthy SBOM for \textit{numpy} that contains no dependency information at all. This is also the case for \textit{Kubernetes}. \textit{Kafka} reports some dependencies but these appear to be incomplete. On the other hand, the component data that was generated is extensive, containing information such as licensing information, package URL, CPE entries and several custom-properties.
+
+\verb|cdxgen|, the official tool developed by the CycloneDX team, generates a lot of metadata that other tools fail to capture, such as information about the component being analyzed and the step of the development lifecycle the tool was used in. regarding component information, \verb|cdxgen| captures the same information as \verb|syft| but also calculates component hashes and source usages. The "scope" of the component (whether it is required or not) is also included sometimes. In some cases, evidence information is also included in a component's data. Dependency information is the same as in \verb|syft|. Contrary to \verb|syft|, there is an \textit{annotations} field added to \verb|cdxgen| SBOMs which, even though the fields themselves are not populated in our examples, indicates that this tool can overall produced more detailed data.
+
+Despite all the information that these tools gather, they still remain severely incomplete when compared to the full \emph{CycloneDX Object Model} \footnote{\href{https://cyclonedx.org/specification/overview/}{https://cyclonedx.org/specification/overview/}}, which contemplates fields such as release notes for components, Service objects, Vulnerability information, among others.
+
+To sum up, \verb|build-info-go| is a great starting point for project maintainers that want to begin generating CycloneDX SBOMs automatically and easily. \verb|Syft| is a great open-source tool that provides a lot of interoperability with SPDX and allows great control into how the tool is used. Finally, \verb|cdxgen| provides the most detailed reports out of the 3 tools analyzed. One good solution to further increase an SBOMs value could be to merge data from both \verb|cdxgen| and \verb|syft|. Nonetheless, these tools still fall short in capturing all the information that the standard contemplates, which can be attributed to the fact that SBOM developments are fairly recent in the Software Development world.
+
+It is worth mentioning that there exists a tool that facilitates CycloneDX SBOM comparisons. However, that tool only allowed comparisons between the components found. Furthermore, since the generated SBOMs contain a lot of repeated patterns, manual analysis proved to be easier.
 
 \subsection{SPDX} \label{results:spdx}
 
@@ -8,5 +24,5 @@
 Generating SWID tags turned out to be an unfeasible task due to the lack of proper tools and documentation. The tools provided by NIST only support Java projects built with Maven, which is too restrictive since the largest projects use Gradle nowadays, while the tools found on GitHub require implementing a custom portion of code in the project to generate the tags, which is not as straightforward as the other tools and it might be unsuitable for complex projects.
 In addition to this, the documentation provided by NIST is often not very clear on how to use the tools, which makes it even harder to generate the SWID tags.
 
-Out of all the previosly mentioned tools, only \verb|swid-maven-plugin| was able to generate a tag file for \href{https://github.com/MithunTechnologiesDevOps/maven-web-application}{this} Maven project.
+Out of all the previously mentioned tools, only \verb|swid-maven-plugin| was able to generate a tag file for \href{https://github.com/MithunTechnologiesDevOps/maven-web-application}{this} Maven project.
 We also tried to use \verb|swid-generator| to generate a SBOM for Kafka, since it is written in Java using Gradle. However, unfortunately this turned out to not be possible for the reasons mentioned above.

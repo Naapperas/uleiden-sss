@@ -60,7 +60,7 @@
                     "group": "",
                     "name": "k8s.io/api",
                     "version": "",
-                    "purl": "pkg:golang/k8s.io/api",
+                    "purl": "pkg:golang/k8s.io/ap   i",
                     "type": "application",
                     "bom-ref": "pkg:golang/k8s.io/api"
                 },
