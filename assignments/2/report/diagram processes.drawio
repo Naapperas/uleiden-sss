@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="j0T8WCVO9mJZ4ZVw5zoe">
+    <mxGraphModel dx="1242" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G9_2CnK8pdYi8GCEIAw-1" target="1G9_2CnK8pdYi8GCEIAw-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G9_2CnK8pdYi8GCEIAw-1" target="1G9_2CnK8pdYi8GCEIAw-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Study of the available SBOMs standards&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-2" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;CycloneDX&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;SPDX&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;SWID&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="355" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G9_2CnK8pdYi8GCEIAw-7" target="1G9_2CnK8pdYi8GCEIAw-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G9_2CnK8pdYi8GCEIAw-7" target="1G9_2CnK8pdYi8GCEIAw-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Research on available SBOM generation tools&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="230" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-9" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;cdxgen&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;build-info-go&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;syft&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;spdx-sbom-generator&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;swid-builder&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;swid-generator&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;swid-maven-plugin&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="316.83" y="355" width="206.35" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G9_2CnK8pdYi8GCEIAw-13" target="1G9_2CnK8pdYi8GCEIAw-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1G9_2CnK8pdYi8GCEIAw-13" target="1G9_2CnK8pdYi8GCEIAw-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Repositories for testing the tools&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="230" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Kafka&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;numpy&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Kubernetes&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="615" y="355" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="1G9_2CnK8pdYi8GCEIAw-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Developed a script to automate the generation process&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="825" y="230" width="250" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
