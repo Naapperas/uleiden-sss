@@ -12,14 +12,14 @@ CycloneDX \cite{standards:sbom:cyclonedx} is an SBOM standard format developed b
 
 For this hands-on comparison, we limited our search to \emph{Open-Source} tools as these are free to access and use. Out of 172 listed Open-Source tools, 3 were chosen: CycloneDX \verb|cdxgen| \cite{repository:cyclonedx:cdxgen}, \verb|build-info-go| \cite{repository:cyclonedx:build-info-go} and \verb|syft| \cite{repository:cyclonedx:syft}. \verb|syft| also supports SPDX, which will be discussed in \ref{dataset:standard:spdx}.
 
-Other tools exists but they are either unrelated (SBOM analysis, VEX generation, \dots), too specific (official SBOM generators for several existing programming languages and build tools) or too limited on the supported development environments.
+Other tools exist but they are either unrelated (SBOM analysis, VEX generation, \dots), too specific (official SBOM generators for several existing programming languages and build tools) or too limited on the supported development environments.
 
 \subsubsection{SPDX} \label{dataset:standard:spdx}
 
 SPDX (System Package Data Exchange) \cite{standards:sbom:spdx} is a standard format maintained by the Linux Foundation for communicating software bill of material information, including provenance, license, security, AI and other related information.
 All these characteristics make it a very versatile tool for software supply chain management. Nowadays it is used in the Linux kernel and in many package managers.
 
-Tools used for SPDX SBOM generation include \verb|syft| \cite{repository:cyclonedx:syft}, \dots
+Official SPDX tools include an online SBOM inspector, validator and converter \cite{repository:spdx:online-tool}, build tools for Java (Gradle and Maven plugins) \cite{repository:spdx:gradle, repository:spdx:maven}, and several libraries for SBOM manipulation in different languages. Additionally, there are community-lead projects such as \verb|spdx-sbom-generator|, and \verb|syft| \cite{repository:spdx:spdx-sbom-generator, repository:cyclonedx:syft} that aim to provide automatic SBOM generation for several different languages and package managers.
 
 \subsubsection{SWID} \label{dataset:standard:swid}
 
@@ -31,11 +31,21 @@ SWID tagging differs from CycloneDX and SPDX in that it is not a full-fledged SB
 
 \subsection{Tools} \label{dataset:tools}
 
-\paragraph{cdxgen} is an official tool developed and released on GitHub by the CycloneDX team, built around the idea of being a "polyglot SBOM generator that is user friendly, precise and comprehensive". It provides a comprehensive SBOM generator for different versions of theCycloneDX Standard and also provides a Server mode, automatic licensing information and Docker/OCI container support. It is currently distributed as an NPM package.
+The following tools were used to generate SBOms for the different standards:
+
+\paragraph{cdxgen} is an official tool developed and released on GitHub by the CycloneDX team, built around the idea of being a "polyglot SBOM generator that is user friendly, precise and comprehensive". It provides a comprehensive SBOM generator for different versions of the CycloneDX Standard. It also provides a Server mode, automatic licensing information, and Docker/OCI container support. It is distributed as an NPM package.
 
 \paragraph{build-info-go} is a CLI tool to generate BuildInfo metadata, a custom format designed to encapsulate software components, their versions and their dependencies. The tool supports multiple languages and package managers and has the option to export the produced BuildInfo output into a valid CycloneDX JSON file.
 
 \paragraph{syft} is a "CLI tool and Go library for generating a Software Bill of Materials (SBOM) from container images and filesystems" \cite{repository:cyclonedx:syft}. It provides visibility into vulnerabilities and license compliance and can interact with modern vulnerability scanners such as Grype. It can output information in over 10 output formats, including custom user-defined formats specified by templates, and supports over 20 ecosystems.
+
+\paragraph{spdx-sbom-generator} is a tool developed by the SPDX community to generate SPDX SBOMs for several different languages and package managers. This tool is still in its infancy, while it boasts support for a lot of languages, it is not battle tested and crashed with most of what we tried. It also does not have good enough configuration.
+
+\subsubsection{Other tools}
+
+These tools were tried but we were not able to generate SBOMs using them:
+
+\paragraph{spdx-gradle-plugin} is the official Gradle plugin for SPDX SBOM generation, which needs to be configured in the project's \verb|build.gradle| file. This requires intimate knowledge of the repositories build process, which we do not have. Due to this and an overall lack of documentation and user friendliness, this tool was not used.
 
 \paragraph{swid-builder} a Java API for building SWID and CoSWID tags. This library provides a set of builder patterns that can be used together to generate tags, however it is not a standalone tool and the provided \href{https://pages.nist.gov/swid-tools/swid-builder/apidocs/index.html}{documentation} is not very clear on how to use it. Thus, it is not suitable for our use case.
 
