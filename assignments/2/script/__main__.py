@@ -1,5 +1,9 @@
+from __future__ import print_function
+
 import traceback
 from itertools import product
+
+import chalk
 
 from .repository import Repository
 from .standard import Standard
@@ -18,32 +22,32 @@ TOOLS = {
 }
 
 def main():
-    print("Building tools...")
+    print(chalk.green(chalk.bold("Building tools...")))
 
     errored = False
     for tool in TOOLS:
         try:
-            print(f"Building {tool}...")
+            print(chalk.green(f"Building {chalk.bold(str(tool))}..."))
             tool.build()
         except Exception as e:
             errored = True
-            error(f"Failed to build {tool}")
+            error(chalk.red(f"Failed to build {chalk.bold(str(tool))}"))
             error(traceback.format_exc())
     if errored:
-        error("Some tools failed to build, exiting...")
+        error(chalk.red("Some tools failed to build, exiting..."))
         exit(1)
 
-    print("Generating reports...")
+    print(chalk.green(chalk.bold("Generating reports...")))
     for repo, standard, tool in product(Repository, Standard, TOOLS):
         if tool.supports(standard):
             try:
-                print(f"Generating {standard} report for {repo} using {tool}...")
+                print(chalk.green(f"Generating {chalk.bold(str(standard))} report for {chalk.bold(str(repo))} using {chalk.bold(str(tool))}..."))
                 tool.generate(repo, standard)
             except Exception as e:
-                error(f"Failed to generate {standard} report for {repo} using {tool}")
+                error(chalk.red(f"Failed to generate {chalk.bold(str(standard))} report for {chalk.bold(str(repo))} using {chalk.bold(str(tool))}"))
                 error(traceback.format_exc())
         else:
-            error(f"{tool} does not support {standard}, skipping")
+            error(chalk.yellow(f"{tool} does not support {standard}, skipping"))
 
 if __name__ == '__main__':
     main()
